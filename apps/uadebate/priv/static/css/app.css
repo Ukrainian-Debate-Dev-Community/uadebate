@@ -431,6 +431,14 @@ a { color:var(--brand); }
 .ua-cmme .ua-av { width:24px; height:24px; font-size:.62rem; }
 .ua-cmbar a.ua-cmlink { font-size:.76rem; font-weight:600; color:var(--co-ink) !important; }
 
+/* a club's logo, kept in cab: beside its name in the list, beside the
+   title on its page */
+.ua-logo { display:block; width:32px; height:32px; max-width:100%; object-fit:contain; border-radius:7px;
+           background:var(--surface); border:1px solid var(--line); flex:none; }
+.ua-logo--lg { width:84px; height:84px; border-radius:12px; align-self:center; }
+.ua-logo + .ua-head-text { flex:1; min-width:0; }
+.ua-clubname { display:flex; align-items:center; gap:10px; min-width:0; }
+
 /* narrow screens */
 @media (max-width:860px) {
   .ua-top { flex-wrap:wrap; padding:10px 16px; gap:10px; }
@@ -492,6 +500,7 @@ a { color:var(--brand); }
   .ua-nav a { flex:none; white-space:nowrap; }
 
   .ua-head { flex-direction:column; align-items:stretch; gap:14px; }
+  .ua-logo--lg { width:64px; height:64px; align-self:flex-start; }
   .ua-head-act { flex-wrap:wrap; }
   .ua-head-act > * { flex:1 1 auto; justify-content:center; text-align:center; min-height:44px;
                      display:inline-flex; align-items:center; }

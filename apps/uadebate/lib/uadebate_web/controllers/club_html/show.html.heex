@@ -2,7 +2,12 @@
   <a href={~p"/clubs"}>{gettext("Clubs")}</a>{if @club.city, do: " / #{city_label(@club.city)}"}
 </div>
 
-<.page_head kicker={(@club.city && city_label(@club.city)) || gettext("Club")} title={@club.name} lead={@club.description}>
+<.page_head
+  kicker={(@club.city && city_label(@club.city)) || gettext("Club")}
+  title={@club.name}
+  lead={@club.description}
+  logo={Clubs.logo_url(@club)}
+>
   <:actions>
     <a class="ua-btn ua-btn--gold" href={cab_url("/c/#{@club.uuid}")}>{gettext("Open in cab")}</a>
   </:actions>

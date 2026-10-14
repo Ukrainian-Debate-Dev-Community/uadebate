@@ -68,8 +68,13 @@
         <tbody>
           <tr :for={club <- @clubs}>
             <td>
-              <a href={~p"/clubs/#{club.uuid}"}><b>{club.name}</b></a>
-              <div :if={club.meeting_info} class="ua-meta">{club.meeting_info}</div>
+              <div class="ua-clubname">
+                <img :if={Clubs.logo_url(club)} class="ua-logo" src={Clubs.logo_url(club)} alt="" />
+                <div>
+                  <a href={~p"/clubs/#{club.uuid}"}><b>{club.name}</b></a>
+                  <div :if={club.meeting_info} class="ua-meta">{club.meeting_info}</div>
+                </div>
+              </div>
             </td>
             <td data-label={gettext("City")}>{city_label(club.city)}</td>
             <td data-label={gettext("Format")}>{labels(club.formats, &format_label(&1, club.format_other))}</td>
