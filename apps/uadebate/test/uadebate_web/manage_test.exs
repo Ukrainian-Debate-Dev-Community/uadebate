@@ -12,12 +12,12 @@ defmodule UadebateWeb.ManageTest do
   test "/manage does not exist for anyone without the role", %{conn: conn} do
     {404, _headers, page} = assert_error_sent(404, fn -> get(conn, ~p"/manage") end)
     assert page =~ "Page not found"
-    assert page =~ ~s(class="ua-top")
-    assert page =~ ~s(class="ua-foot")
+    assert page =~ ~s(class="ua-error")
+    assert page =~ "UAdebate"
     refute page =~ "manage"
     unknown = conn |> get("/no-such-page") |> html_response(404)
     assert unknown =~ "Page not found"
-    assert unknown =~ ~s(class="ua-top")
+    assert unknown =~ ~s(class="ua-error")
     assert_error_sent 404, fn -> conn |> cab_sign_in(cab_user()) |> get(~p"/manage") end
 
     {_status, headers, _body} =

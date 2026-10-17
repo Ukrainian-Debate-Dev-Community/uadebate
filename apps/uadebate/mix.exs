@@ -18,7 +18,10 @@ defmodule Uadebate.MixProject do
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps(),
-      listeners: [Phoenix.CodeReloader]
+      listeners: [Phoenix.CodeReloader],
+      # translation files list each text's file without a line number and
+      # keep entries sorted, so branches rarely conflict in them
+      gettext: [write_reference_line_numbers: false, sort_by_msgid: :case_sensitive]
     ]
   end
 

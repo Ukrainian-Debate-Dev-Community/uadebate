@@ -21,6 +21,15 @@ defmodule UadebateWeb.Site do
   # frame
   # ---------------------------------------------------------------
 
+  attr :class, :string, default: nil
+
+  @doc "The UAdebate wordmark with its beta tag, linking home; the one copy every page uses."
+  def wordmark(assigns) do
+    ~H"""
+    <a class={["wordmark", @class]} href={~p"/"}>UAdebate<.beta /></a>
+    """
+  end
+
   @doc "The beta tag beside the wordmark, until the site leaves beta."
   def beta(assigns) do
     ~H"""
@@ -42,7 +51,7 @@ defmodule UadebateWeb.Site do
 
     ~H"""
     <header class="ua-top">
-      <a class="ua-brand wordmark" href={~p"/"}>UAdebate<.beta /></a>
+      <.wordmark class="ua-brand" />
       <nav class="ua-nav">
         <a :for={{key, href, label} <- @items} class={key == @active && "on"} href={href}>{label}</a>
       </nav>
@@ -146,7 +155,7 @@ defmodule UadebateWeb.Site do
     <footer class="ua-foot">
       <div class="ua-foot-in ua-foot-in--3">
         <div>
-          <a class="wordmark ua-foot-mark" href={~p"/"}>UAdebate<.beta /></a>
+          <.wordmark class="ua-foot-mark" />
           <p>{gettext("Debate Federation of Ukraine")}</p>
           <p>{gettext("A debate community since 2011")}</p>
         </div>
