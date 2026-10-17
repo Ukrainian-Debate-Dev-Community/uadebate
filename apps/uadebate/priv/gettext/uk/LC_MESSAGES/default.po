@@ -11,8 +11,8 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100 != 11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10||n%100>=20) ? 1 : 2);\n"
 
-#: lib/uadebate_web/controllers/club_html/index.html.heex:51
-#: lib/uadebate_web/controllers/page_html/home.html.heex:40
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
 msgid "%{count} city"
 msgid_plural "%{count} cities"
@@ -20,1343 +20,7 @@ msgstr[0] "%{count} місто"
 msgstr[1] "%{count} міста"
 msgstr[2] "%{count} міст"
 
-#: lib/uadebate_web/controllers/club_html/index.html.heex:51
-#: lib/uadebate_web/controllers/page_html/home.html.heex:40
-#, elixir-autogen, elixir-format
-msgid "%{count} club"
-msgid_plural "%{count} clubs"
-msgstr[0] "%{count} клуб"
-msgstr[1] "%{count} клуби"
-msgstr[2] "%{count} клубів"
-
-#: lib/uadebate_web/controllers/manage/people_controller.ex:30
-#, elixir-autogen, elixir-format
-msgid "%{name} can now manage the site. Send them the link uadebate.com/manage."
-msgstr "%{name} тепер може керувати сайтом. Надішліть людині посилання uadebate.com/manage."
-
-#: lib/uadebate_web/components/site.ex:228
-#: lib/uadebate_web/controllers/news_html/show.html.heex:8
-#, elixir-autogen, elixir-format
-msgid "%{n} min read"
-msgstr "%{n} хв читання"
-
-#: lib/uadebate_web/controllers/page_html.ex:12
-#, elixir-autogen, elixir-format
-msgid "11 regional and 2 city branches; the first English-language league"
-msgstr "11 обласних і 2 міських осередки; перша англомовна ліга"
-
-#: lib/uadebate_web/components/site.ex:160
-#, elixir-autogen, elixir-format
-msgid "A debate community since 2011"
-msgstr "Дебатна спільнота з 2011 року"
-
-#: lib/uadebate_web/components/site.ex:462
-#, elixir-autogen, elixir-format
-msgid "APF"
-msgstr "АПФ"
-
-#: lib/uadebate_web/components/site.ex:49
-#: lib/uadebate_web/components/site.ex:167
-#: lib/uadebate_web/controllers/page_controller.ex:25
-#, elixir-autogen, elixir-format
-msgid "About"
-msgstr "Про ФДУ"
-
-#: lib/uadebate_web/controllers/club_html/show.html.heex:19
-#, elixir-autogen, elixir-format
-msgid "About the club"
-msgstr "Про клуб"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:58
-#, elixir-autogen, elixir-format
-msgid "About the federation"
-msgstr "Про Федерацію"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:76
-#, elixir-autogen, elixir-format
-msgid "Active clubs"
-msgstr "Активні клуби"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:35
-#, elixir-autogen, elixir-format
-msgid "Address"
-msgstr "Адреса"
-
-#: lib/uadebate_web/components/site.ex:141
-#, elixir-autogen, elixir-format
-msgid "Admin"
-msgstr "Адміністратор"
-
-#: lib/uadebate_web/controllers/calendar_html.ex:45
-#: lib/uadebate_web/controllers/club_html.ex:19
-#: lib/uadebate_web/controllers/news_html/index.html.heex:9
-#, elixir-autogen, elixir-format
-msgid "All"
-msgstr "Усі"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:13
-#, elixir-autogen, elixir-format
-msgid "All cities"
-msgstr "Усі міста"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:51
-#, elixir-autogen, elixir-format
-msgid "All news"
-msgstr "Усі новини"
-
-#: lib/uadebate_web/components/site.ex:445
-#, elixir-autogen, elixir-format
-msgid "Announcements"
-msgstr "Анонси"
-
-#: lib/uadebate_web/controllers/news_html/index.html.heex:4
-#, elixir-autogen, elixir-format
-msgid "Announcements, tournament results, interviews and tips for debaters."
-msgstr "Анонси, результати турнірів, інтерв'ю та поради для дебатерів."
-
-#: lib/uadebate_web/components/site.ex:498
-#, elixir-autogen, elixir-format
-msgid "April"
-msgstr "Квітень"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:43
-#, elixir-autogen, elixir-format
-msgid "Audience"
-msgstr "Аудиторія"
-
-#: lib/uadebate_web/components/site.ex:502
-#, elixir-autogen, elixir-format
-msgid "August"
-msgstr "Серпень"
-
-#: lib/uadebate_web/components/site.ex:461
-#, elixir-autogen, elixir-format
-msgid "BP"
-msgstr "БПФ"
-
-#: lib/uadebate_web/controllers/manage/news_controller.ex:64
-#, elixir-autogen, elixir-format
-msgid "Back to draft: only content managers see it."
-msgstr "Знову чернетка: її бачать лише контент-менеджери."
-
-#: lib/uadebate_web/controllers/error_html.ex:46
-#, elixir-autogen, elixir-format
-msgid "Back to the home page"
-msgstr "На головну"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:45
-#: lib/uadebate_web/controllers/page_html/home.html.heex:78
-#, elixir-autogen, elixir-format
-msgid "Branches"
-msgstr "Осередки"
-
-#: lib/uadebate_web/components/site.ex:401
-#, elixir-autogen, elixir-format
-msgid "Branches of the federation"
-msgstr "Осередки Федерації"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:19
-#, elixir-autogen, elixir-format
-msgid "Building a successful community of well-rounded, informed and socially active young people united by the game of debate"
-msgstr "Розвиток успішної спільноти різносторонньої, обізнаної та соціально активної молоді, об'єднаної грою дебати"
-
-#: lib/uadebate_web/components/site.ex:60
-#, elixir-autogen, elixir-format
-msgid "Cabinet"
-msgstr "Кабінет"
-
-#: lib/uadebate_web/components/site.ex:171
-#, elixir-autogen, elixir-format
-msgid "Cabinet (cab)"
-msgstr "Кабінет (cab)"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:76
-#, elixir-autogen, elixir-format
-msgid "Cabinet support"
-msgstr "Підтримка кабінету"
-
-#: lib/uadebate_web/components/site.ex:47
-#: lib/uadebate_web/components/site.ex:127
-#: lib/uadebate_web/components/site.ex:165
-#: lib/uadebate_web/controllers/calendar_controller.ex:14
-#: lib/uadebate_web/controllers/calendar_html/index.html.heex:2
-#: lib/uadebate_web/controllers/manage/calendar_controller.ex:17
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:2
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:22
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:3
-#: lib/uadebate_web/controllers/page_html/home.html.heex:69
-#, elixir-autogen, elixir-format
-msgid "Calendar"
-msgstr "Календар"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:77
-#, elixir-autogen, elixir-format
-msgid "Cities"
-msgstr "Міста"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:11
-#: lib/uadebate_web/controllers/club_html/index.html.heex:63
-#: lib/uadebate_web/controllers/club_html/index.html.heex:74
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:62
-#, elixir-autogen, elixir-format
-msgid "City"
-msgstr "Місто"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:87
-#, elixir-autogen, elixir-format
-msgid "Click a city to show its clubs"
-msgstr "Натисніть на місто, щоб показати його клуби"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:62
-#: lib/uadebate_web/controllers/club_html/show.html.heex:5
-#, elixir-autogen, elixir-format
-msgid "Club"
-msgstr "Клуб"
-
-#: lib/uadebate_web/controllers/club_html/show.html.heex:26
-#, elixir-autogen, elixir-format
-msgid "Club details are kept by the club in cab."
-msgstr "Дані клубу веде сам клуб у cab."
-
-#: lib/uadebate_web/components/site.ex:453
-#, elixir-autogen, elixir-format
-msgid "Club event"
-msgstr "Клубна подія"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:86
-#, elixir-autogen, elixir-format
-msgid "Club map"
-msgstr "Мапа клубів"
-
-#: lib/uadebate_web/components/site.ex:48
-#: lib/uadebate_web/components/site.ex:166
-#: lib/uadebate_web/controllers/club_controller.ex:12
-#: lib/uadebate_web/controllers/club_html/index.html.heex:2
-#: lib/uadebate_web/controllers/club_html/show.html.heex:2
-#, elixir-autogen, elixir-format
-msgid "Clubs"
-msgstr "Клуби"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:26
-#, elixir-autogen, elixir-format
-msgid "Clubs across the country. Register for tournaments, find a club near you and sharpen your critical thinking."
-msgstr "Клуби по всій країні. Реєструйтеся на турніри, знайдіть клуб поруч і розвивайте критичне мислення."
-
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:22
-#, elixir-autogen, elixir-format
-msgid "Coming up"
-msgstr "Найближче"
-
-#: lib/uadebate_web/components/site.ex:449
-#: lib/uadebate_web/controllers/page_html/home.html.heex:74
-#, elixir-autogen, elixir-format
-msgid "Community"
-msgstr "Спільнота"
-
-#: lib/uadebate_web/components/site.ex:176
-#: lib/uadebate_web/controllers/club_html/show.html.heex:24
-#: lib/uadebate_web/controllers/page_html/about.html.heex:70
-#, elixir-autogen, elixir-format
-msgid "Contact"
-msgstr "Контакти"
-
-#: lib/uadebate_web/components/site.ex:141
-#, elixir-autogen, elixir-format
-msgid "Content manager"
-msgstr "Контент-менеджер"
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:2
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:20
-#, elixir-autogen, elixir-format
-msgid "Content managers"
-msgstr "Контент-менеджери"
-
-#: lib/uadebate_web/cab_operator.ex:29
-#: lib/uadebate_web/components/site.ex:159
-#: lib/uadebate_web/controllers/page_html/about.html.heex:3
-#: lib/uadebate_web/controllers/page_html/home.html.heex:21
-#, elixir-autogen, elixir-format
-msgid "Debate Federation of Ukraine"
-msgstr "Федерація Дебатів України"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:3
-#, elixir-autogen, elixir-format
-msgid "Debate clubs of Ukraine"
-msgstr "Дебатні клуби України"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:27
-#, elixir-autogen, elixir-format
-msgid "Debate is a game where you can develop the skills of argumentation across a wide range of topics."
-msgstr "Дебати є грою, де можна розвинути навички аргументації у широкому просторі тем."
-
-#: lib/uadebate_web/components/site.ex:506
-#, elixir-autogen, elixir-format
-msgid "December"
-msgstr "Грудень"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:13
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:9
-#, elixir-autogen, elixir-format
-msgid "Delete"
-msgstr "Видалити"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:103
-#: lib/uadebate_web/controllers/page_html/home.html.heex:15
-#, elixir-autogen, elixir-format
-msgid "Details"
-msgstr "Докладніше"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:11
-#, elixir-autogen, elixir-format
-msgid "Developing the intellectual potential of active youth, the foundation of society, through the unique technology of debate"
-msgstr "Розвиток інтелектуального потенціалу активної молоді, як фундаменту суспільства, через унікальну технологію дебати"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:59
-#, elixir-autogen, elixir-format
-msgid "Documents"
-msgstr "Документи"
-
-#: lib/uadebate_web/components/site.ex:532
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:31
-#, elixir-autogen, elixir-format
-msgid "Draft"
-msgstr "Чернетка"
-
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:16
-#, elixir-autogen, elixir-format
-msgid "Drafts"
-msgstr "Чернетки"
-
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:74
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:27
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:4
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:72
-#, elixir-autogen, elixir-format
-msgid "Edit"
-msgstr "Редагувати"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:4
-#, elixir-autogen, elixir-format
-msgid "Edit event"
-msgstr "Редагувати подію"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:53
-#, elixir-autogen, elixir-format
-msgid "Ends"
-msgstr "Закінчується"
-
-#: lib/uadebate_web/components/site.ex:472
-#, elixir-autogen, elixir-format
-msgid "English"
-msgstr "Англійська"
-
-#: lib/uadebate_web/components/site.ex:454
-#, elixir-autogen, elixir-format
-msgid "Event"
-msgstr "Подія"
-
-#: lib/uadebate_web/controllers/manage/event_controller.ex:47
-#, elixir-autogen, elixir-format
-msgid "Event deleted."
-msgstr "Подію видалено."
-
-#: lib/uadebate_web/controllers/manage/event_controller.ex:15
-#: lib/uadebate_web/controllers/manage/event_controller.ex:34
-#, elixir-autogen, elixir-format
-msgid "Event saved."
-msgstr "Подію збережено."
-
-#: lib/uadebate_web/components/site.ex:496
-#, elixir-autogen, elixir-format
-msgid "February"
-msgstr "Лютий"
-
-#: lib/uadebate_web/controllers/news_html/index.html.heex:3
-#, elixir-autogen, elixir-format
-msgid "Federation news"
-msgstr "Новини Федерації"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:34
-#, elixir-autogen, elixir-format
-msgid "Find a club"
-msgstr "Знайти клуб"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:4
-#, elixir-autogen, elixir-format
-msgid "Find a club in your city: format, language, who it is for and when it meets."
-msgstr "Знайдіть клуб у своєму місті: формат, мова, для кого він і коли збирається."
-
-#: lib/uadebate_web/controllers/page_html.ex:11
-#: lib/uadebate_web/controllers/page_html.ex:33
-#, elixir-autogen, elixir-format
-msgid "First Ukrainian Debate Championship"
-msgstr "Перший Чемпіонат України з дебатів"
-
-#: lib/uadebate_web/controllers/page_html.ex:29
-#, elixir-autogen, elixir-format
-msgid "First debate tournament, the Federation Cup in Vinnytsia, for members of the organisation"
-msgstr "Перший дебатний турнір, Кубок Федерації у Вінниці, для членів організації"
-
-#: lib/uadebate_web/controllers/page_html.ex:22
-#, elixir-autogen, elixir-format
-msgid "First founding conference of the All-Ukrainian youth organisation \"Debate Federation of Ukraine\""
-msgstr "Перша установча конференція Всеукраїнської молодіжної організації «Федерація Дебатів України»"
-
-#: lib/uadebate_web/controllers/page_html.ex:9
-#, elixir-autogen, elixir-format
-msgid "First founding conference of the federation"
-msgstr "Перша установча конференція Федерації"
-
-#: lib/uadebate_web/controllers/page_html.ex:10
-#, elixir-autogen, elixir-format
-msgid "First tournament, the Federation Cup in Vinnytsia"
-msgstr "Перший турнір, Кубок Федерації у Вінниці"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:29
-#: lib/uadebate_web/controllers/club_html/index.html.heex:64
-#: lib/uadebate_web/controllers/club_html/index.html.heex:75
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:66
-#, elixir-autogen, elixir-format
-msgid "Format"
-msgstr "Формат"
-
-#: lib/uadebate_web/components/site.ex:314
-#, elixir-autogen, elixir-format
-msgid "Fri"
-msgstr "Пт"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:17
-#, elixir-autogen, elixir-format
-msgid "Goal"
-msgstr "Мета"
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:7
-#, elixir-autogen, elixir-format
-msgid "Grant the content-manager role"
-msgstr "Надати роль контент-менеджера"
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:16
-#, elixir-autogen, elixir-format
-msgid "Grant the role"
-msgstr "Надати роль"
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:27
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:38
-#, elixir-autogen, elixir-format
-msgid "Granted by"
-msgstr "Надав"
-
-#: lib/uadebate_web/controllers/club_html/show.html.heex:23
-#, elixir-autogen, elixir-format
-msgid "Head"
-msgstr "Голова"
-
-#: lib/uadebate_web/components/site.ex:45
-#, elixir-autogen, elixir-format
-msgid "Home"
-msgstr "Головна"
-
-#: lib/uadebate_web/components/site.ex:447
-#, elixir-autogen, elixir-format
-msgid "Interviews"
-msgstr "Інтерв'ю"
-
-#: lib/uadebate_web/components/site.ex:495
-#, elixir-autogen, elixir-format
-msgid "January"
-msgstr "Січень"
-
-#: lib/uadebate_web/components/site.ex:501
-#, elixir-autogen, elixir-format
-msgid "July"
-msgstr "Липень"
-
-#: lib/uadebate_web/components/site.ex:500
-#, elixir-autogen, elixir-format
-msgid "June"
-msgstr "Червень"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:34
-#, elixir-autogen, elixir-format
-msgid "Kind"
-msgstr "Вид"
-
-#: lib/uadebate_web/components/site.ex:100
-#: lib/uadebate_web/components/site.ex:100
-#: lib/uadebate_web/controllers/club_html/index.html.heex:36
-#: lib/uadebate_web/controllers/club_html/index.html.heex:65
-#: lib/uadebate_web/controllers/club_html/index.html.heex:76
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:72
-#, elixir-autogen, elixir-format
-msgid "Language"
-msgstr "Мова"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:97
-#, elixir-autogen, elixir-format
-msgid "Link"
-msgstr "Посилання"
-
-#: lib/uadebate_web/controllers/manage/dash_controller.ex:13
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:2
-#, elixir-autogen, elixir-format
-msgid "Manage"
-msgstr "Керування"
-
-#: lib/uadebate_web/components/site.ex:377
-#, elixir-autogen, elixir-format
-msgid "Map of debate clubs in Ukraine"
-msgstr "Мапа дебатних клубів України"
-
-#: lib/uadebate_web/components/site.ex:497
-#, elixir-autogen, elixir-format
-msgid "March"
-msgstr "Березень"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:88
-#, elixir-autogen, elixir-format
-msgid "Markdown: ## for a heading, **bold**, [a link](https://...), > for a quote."
-msgstr "Markdown: ## для заголовка, **жирний**, [посилання](https://...), > для цитати."
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:25
-#, elixir-autogen, elixir-format
-msgid "Means"
-msgstr "Засоби"
-
-#: lib/uadebate_web/controllers/club_html/show.html.heex:21
-#, elixir-autogen, elixir-format
-msgid "Meets"
-msgstr "Зустрічі"
-
-#: lib/uadebate_web/controllers/club_html/show.html.heex:22
-#, elixir-autogen, elixir-format
-msgid "Members"
-msgstr "Члени"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:9
-#, elixir-autogen, elixir-format
-msgid "Mission"
-msgstr "Місія"
-
-#: lib/uadebate_web/components/site.ex:310
-#, elixir-autogen, elixir-format
-msgid "Mon"
-msgstr "Пн"
-
-#: lib/uadebate_web/controllers/news_html/show.html.heex:16
-#, elixir-autogen, elixir-format
-msgid "More news"
-msgstr "Більше новин"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:5
-#, elixir-autogen, elixir-format
-msgid "New"
-msgstr "Нова"
-
-#: lib/uadebate_web/controllers/manage/event_controller.ex:61
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:7
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:9
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:5
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:25
-#, elixir-autogen, elixir-format
-msgid "New event"
-msgstr "Нова подія"
-
-#: lib/uadebate_web/components/site.ex:46
-#: lib/uadebate_web/components/site.ex:126
-#: lib/uadebate_web/components/site.ex:164
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:3
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:2
-#: lib/uadebate_web/controllers/manage/news_controller.ex:14
-#: lib/uadebate_web/controllers/news_controller.ex:12
-#: lib/uadebate_web/controllers/news_html/index.html.heex:2
-#: lib/uadebate_web/controllers/news_html/show.html.heex:2
-#: lib/uadebate_web/controllers/page_html/home.html.heex:51
-#, elixir-autogen, elixir-format
-msgid "News"
-msgstr "Новини"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:6
-#, elixir-autogen, elixir-format
-msgid "Next tournament"
-msgstr "Наступний турнір"
-
-#: lib/uadebate_web/controllers/manage/people_controller.ex:20
-#, elixir-autogen, elixir-format
-msgid "No cab account has that username or e-mail. They sign in to cab once first."
-msgstr "Жоден акаунт у cab не має такого імені користувача чи e-mail. Спершу людина має один раз увійти в cab."
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:80
-#, elixir-autogen, elixir-format
-msgid "No club matches these filters."
-msgstr "Жоден клуб не відповідає цим фільтрам."
-
-#: lib/uadebate_web/controllers/news_html/index.html.heex:23
-#, elixir-autogen, elixir-format
-msgid "No news here yet."
-msgstr "Тут поки немає новин."
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:55
-#, elixir-autogen, elixir-format
-msgid "No news yet."
-msgstr "Новин поки немає."
-
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:46
-#, elixir-autogen, elixir-format
-msgid "No news yet. Write the first one."
-msgstr "Новин поки немає. Напишіть першу."
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:47
-#, elixir-autogen, elixir-format
-msgid "Nobody holds the role yet."
-msgstr "Цієї ролі поки ні в кого немає."
-
-#: lib/uadebate_web/controllers/calendar_html.ex:79
-#, elixir-autogen, elixir-format
-msgid "Nothing planned this month."
-msgstr "Цього місяця нічого не заплановано."
-
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:30
-#: lib/uadebate_web/controllers/page_html/home.html.heex:72
-#, elixir-autogen, elixir-format
-msgid "Nothing planned yet."
-msgstr "Поки нічого не заплановано."
-
-#: lib/uadebate_web/components/site.ex:505
-#, elixir-autogen, elixir-format
-msgid "November"
-msgstr "Листопад"
-
-#: lib/uadebate_web/components/site.ex:504
-#, elixir-autogen, elixir-format
-msgid "October"
-msgstr "Жовтень"
-
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:18
-#, elixir-autogen, elixir-format
-msgid "Of them private"
-msgstr "З них приватних"
-
-#: lib/uadebate_web/controllers/club_html/show.html.heex:29
-#, elixir-autogen, elixir-format
-msgid "On the map"
-msgstr "На мапі"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:82
-#, elixir-autogen, elixir-format
-msgid "One or two sentences shown above the article."
-msgstr "Одне-два речення над статтею."
-
-#: lib/uadebate_web/controllers/club_html/show.html.heex:7
-#, elixir-autogen, elixir-format
-msgid "Open in cab"
-msgstr "Відкрити в cab"
-
-#: lib/uadebate_web/components/site.ex:477
-#, elixir-autogen, elixir-format
-msgid "Open to all"
-msgstr "Відкрито для всіх"
-
-#: lib/uadebate_web/components/site.ex:463
-#, elixir-autogen, elixir-format
-msgid "Other format"
-msgstr "Інший формат"
-
-#: lib/uadebate_web/components/site.ex:473
-#, elixir-autogen, elixir-format
-msgid "Other language"
-msgstr "Інша мова"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:58
-#, elixir-autogen, elixir-format
-msgid "Our story"
-msgstr "Наша історія"
-
-#: lib/uadebate_web/components/site.ex:125
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:3
-#, elixir-autogen, elixir-format
-msgid "Overview"
-msgstr "Огляд"
-
-#: lib/uadebate_web/components/site.ex:133
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:2
-#: lib/uadebate_web/controllers/manage/people_controller.ex:11
-#, elixir-autogen, elixir-format
-msgid "People"
-msgstr "Люди"
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:11
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:25
-#, elixir-autogen, elixir-format
-msgid "Person"
-msgstr "Людина"
-
-#: lib/uadebate_web/components/site.ex:170
-#, elixir-autogen, elixir-format
-msgid "Platform"
-msgstr "Платформа"
-
-#: lib/uadebate_web/components/site.ex:172
-#: lib/uadebate_web/controllers/page_html/about.html.heex:62
-#, elixir-autogen, elixir-format
-msgid "Privacy policy"
-msgstr "Політика конфіденційності"
-
-#: lib/uadebate_web/components/site.ex:277
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:69
-#, elixir-autogen, elixir-format
-msgid "Private"
-msgstr "Приватна"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:123
-#, elixir-autogen, elixir-format
-msgid "Private: only content managers see it"
-msgstr "Приватна: її бачать лише контент-менеджери"
-
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:59
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:115
-#, elixir-autogen, elixir-format
-msgid "Public"
-msgstr "Публічна"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:26
-#, elixir-autogen, elixir-format
-msgid "Public events appear on the calendar, the home page and the iCal feed."
-msgstr "Публічні події з'являються в календарі, на головній і в стрічці iCal."
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:13
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:36
-#, elixir-autogen, elixir-format
-msgid "Publish"
-msgstr "Опублікувати"
-
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:29
-#, elixir-autogen, elixir-format
-msgid "Published %{date}"
-msgstr "Опубліковано %{date}"
-
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:15
-#, elixir-autogen, elixir-format
-msgid "Published news"
-msgstr "Опубліковані новини"
-
-#: lib/uadebate_web/controllers/manage/news_controller.ex:56
-#, elixir-autogen, elixir-format
-msgid "Published: everyone can read it now."
-msgstr "Опубліковано: тепер її може прочитати кожен."
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:99
-#, elixir-autogen, elixir-format
-msgid "Registration or the tournament's page, https://..."
-msgstr "Реєстрація або сторінка турніру, https://..."
-
-#: lib/uadebate_web/components/site.ex:446
-#, elixir-autogen, elixir-format
-msgid "Results"
-msgstr "Результати"
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:41
-#, elixir-autogen, elixir-format
-msgid "Revoke"
-msgstr "Забрати"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:41
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:17
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:26
-#, elixir-autogen, elixir-format
-msgid "Rubric"
-msgstr "Рубрика"
-
-#: lib/uadebate_web/components/site.ex:315
-#, elixir-autogen, elixir-format
-msgid "Sat"
-msgstr "Сб"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:129
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:93
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:52
-#, elixir-autogen, elixir-format
-msgid "Save"
-msgstr "Зберегти"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:27
-#, elixir-autogen, elixir-format
-msgid "Saved as a draft until you publish it."
-msgstr "Збережено як чернетку, доки ви її не опублікуєте."
-
-#: lib/uadebate_web/controllers/manage/news_controller.ex:27
-#, elixir-autogen, elixir-format
-msgid "Saved as a draft."
-msgstr "Збережено як чернетку."
-
-#: lib/uadebate_web/controllers/manage/news_controller.ex:45
-#, elixir-autogen, elixir-format
-msgid "Saved."
-msgstr "Збережено."
-
-#: lib/uadebate_web/components/site.ex:475
-#, elixir-autogen, elixir-format
-msgid "School students"
-msgstr "Школярі"
-
-#: lib/uadebate_web/components/site.ex:503
-#, elixir-autogen, elixir-format
-msgid "September"
-msgstr "Вересень"
-
-#: lib/uadebate_web/controllers/club_html/index.html.heex:25
-#, elixir-autogen, elixir-format
-msgid "Show"
-msgstr "Показати"
-
-#: lib/uadebate_web/components/site.ex:148
-#, elixir-autogen, elixir-format
-msgid "Sign out"
-msgstr "Вийти"
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:26
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:37
-#, elixir-autogen, elixir-format
-msgid "Since"
-msgstr "Від"
-
-#: lib/uadebate_web/components/site.ex:163
-#, elixir-autogen, elixir-format
-msgid "Site"
-msgstr "Сайт"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:48
-#, elixir-autogen, elixir-format
-msgid "Starts"
-msgstr "Починається"
-
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:18
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:27
-#, elixir-autogen, elixir-format
-msgid "Status"
-msgstr "Статус"
-
-#: lib/uadebate_web/controllers/calendar_html/index.html.heex:7
-#, elixir-autogen, elixir-format
-msgid "Subscribe to the calendar"
-msgstr "Підписатися на календар"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:80
-#, elixir-autogen, elixir-format
-msgid "Summary"
-msgstr "Анонс"
-
-#: lib/uadebate_web/components/site.ex:316
-#, elixir-autogen, elixir-format
-msgid "Sun"
-msgstr "Нд"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:78
-#, elixir-autogen, elixir-format
-msgid "Telegram"
-msgstr "Telegram"
-
-#: lib/uadebate_web/components/site.ex:173
-#: lib/uadebate_web/controllers/page_html/about.html.heex:65
-#, elixir-autogen, elixir-format
-msgid "Terms of use"
-msgstr "Умови користування"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:85
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:29
-#, elixir-autogen, elixir-format
-msgid "Text"
-msgstr "Текст"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:37
-#, elixir-autogen, elixir-format
-msgid "The end of the link, /news/... Left empty, it is made from the title."
-msgstr "Кінець посилання, /news/... Якщо лишити порожнім, його буде зроблено з заголовка."
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:73
-#, elixir-autogen, elixir-format
-msgid "The federation"
-msgstr "Федерація"
-
-#: lib/uadebate_web/controllers/page_html.ex:38
-#, elixir-autogen, elixir-format
-msgid "The first English-language debate league was held in Kharkiv"
-msgstr "Проведено першу англомовну дебатну лігу у Харкові"
-
-#: lib/uadebate_web/controllers/page_html.ex:37
-#, elixir-autogen, elixir-format
-msgid "The number of branches grew to 11 regional and 2 city branches of the DFU"
-msgstr "Кількість осередків збільшилася до 11 обласних та 2 міських відділень ФДУ"
-
-#: lib/uadebate_web/controllers/manage/people_controller.ex:42
-#, elixir-autogen, elixir-format
-msgid "The role is revoked; it takes effect on their next request."
-msgstr "Роль забрано; це діє з наступного запиту людини."
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:65
-#, elixir-autogen, elixir-format
-msgid "The rules for the site and the cabinet"
-msgstr "Правила сайту і кабінету"
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:13
-#, elixir-autogen, elixir-format
-msgid "Their exact cab username or e-mail."
-msgstr "Точне ім'я користувача в cab або e-mail."
-
-#: lib/uadebate_web/components/site.ex:313
-#, elixir-autogen, elixir-format
-msgid "Thu"
-msgstr "Чт"
-
-#: lib/uadebate_web/components/site.ex:448
-#, elixir-autogen, elixir-format
-msgid "Tips"
-msgstr "Поради"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:29
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:30
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:16
-#, elixir-autogen, elixir-format
-msgid "Title"
-msgstr "Заголовок"
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:8
-#, elixir-autogen, elixir-format
-msgid "To a person who has signed in to cab at least once."
-msgstr "Людині, яка хоча б раз входила в cab."
-
-#: lib/uadebate_web/components/site.ex:451
-#, elixir-autogen, elixir-format
-msgid "Tournament"
-msgstr "Турнір"
-
-#: lib/uadebate_web/controllers/calendar_html/index.html.heex:3
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:3
-#, elixir-autogen, elixir-format
-msgid "Tournaments and events"
-msgstr "Турніри та події"
-
-#: lib/uadebate_web/controllers/calendar_html/index.html.heex:4
-#, elixir-autogen, elixir-format
-msgid "Tournaments first, plus trainings and club events across Ukraine."
-msgstr "Насамперед турніри, а також тренінги та клубні події по всій Україні."
-
-#: lib/uadebate_web/components/site.ex:452
-#, elixir-autogen, elixir-format
-msgid "Training"
-msgstr "Тренінг"
-
-#: lib/uadebate_web/components/site.ex:311
-#, elixir-autogen, elixir-format
-msgid "Tue"
-msgstr "Вт"
-
-#: lib/uadebate_web/components/layouts.ex:45
-#, elixir-autogen, elixir-format
-msgid "UAdebate, the Debate Federation of Ukraine"
-msgstr "UAdebate, Федерація Дебатів України"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:23
-#, elixir-autogen, elixir-format
-msgid "Ukraine's debate community:"
-msgstr "Дебатна спільнота України:"
-
-#: lib/uadebate_web/components/site.ex:471
-#, elixir-autogen, elixir-format
-msgid "Ukrainian"
-msgstr "Українська"
-
-#: lib/uadebate_web/components/site.ex:476
-#, elixir-autogen, elixir-format
-msgid "University students"
-msgstr "Студенти"
-
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:39
-#, elixir-autogen, elixir-format
-msgid "Unpublish"
-msgstr "Зняти з публікації"
-
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:17
-#: lib/uadebate_web/controllers/page_html/home.html.heex:69
-#: lib/uadebate_web/controllers/page_html/home.html.heex:79
-#, elixir-autogen, elixir-format
-msgid "Upcoming events"
-msgstr "Найближчі події"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:32
-#, elixir-autogen, elixir-format
-msgid "Upcoming tournaments"
-msgstr "Найближчі турніри"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:8
-#, elixir-autogen, elixir-format
-msgid "View"
-msgstr "Переглянути"
-
-#: lib/uadebate_web/components/site.ex:147
-#, elixir-autogen, elixir-format
-msgid "View site"
-msgstr "Переглянути сайт"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:107
-#, elixir-autogen, elixir-format
-msgid "Visibility"
-msgstr "Видимість"
-
-#: lib/uadebate_web/components/site.ex:312
-#, elixir-autogen, elixir-format
-msgid "Wed"
-msgstr "Ср"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:62
-#, elixir-autogen, elixir-format
-msgid "What we store and why"
-msgstr "Що ми зберігаємо і навіщо"
-
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:10
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:26
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:3
-#: lib/uadebate_web/controllers/manage/news_controller.ex:92
-#, elixir-autogen, elixir-format
-msgid "Write news"
-msgstr "Написати новину"
-
-#: lib/uadebate_web/controllers/manage/html/dash.html.heex:5
-#, elixir-autogen, elixir-format
-msgid "You reached this through the link you were given; it works only while you hold the role."
-msgstr "Ви потрапили сюди за посиланням, яке вам надали; воно діє, лише поки у вас є ця роль."
-
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:4
-#, elixir-autogen, elixir-format
-msgid "You see private events too: only content managers see them."
-msgstr "Ви бачите й приватні події: їх бачать лише контент-менеджери."
-
-#: lib/uadebate_web/controllers/manage/html/people.html.heex:38
-#, elixir-autogen, elixir-format
-msgid "set up from the server"
-msgstr "налаштовано із сервера"
-
-#: lib/uadebate_web/controllers/page_html/home.html.heex:23
-#, elixir-autogen, elixir-format
-msgid "tournaments, clubs, growth"
-msgstr "турніри, клуби, розвиток"
-
-#: lib/uadebate_web/components/site.ex:458
-#, elixir-autogen, elixir-format
-msgid "Club events"
-msgstr "Клубні події"
-
-#: lib/uadebate_web/components/site.ex:459
-#, elixir-autogen, elixir-format
-msgid "Other events"
-msgstr "Інші події"
-
-#: lib/uadebate_web/components/site.ex:456
-#, elixir-autogen, elixir-format
-msgid "Tournaments"
-msgstr "Турніри"
-
-#: lib/uadebate_web/components/site.ex:457
-#, elixir-autogen, elixir-format
-msgid "Trainings"
-msgstr "Тренінги"
-
-#: lib/uadebate_web/components/site.ex:83
-#: lib/uadebate_web/components/site.ex:85
-#, elixir-autogen, elixir-format
-msgid "Theme: auto"
-msgstr "Тема: авто"
-
-#: lib/uadebate_web/components/site.ex:84
-#, elixir-autogen, elixir-format
-msgid "Theme: dark"
-msgstr "Тема: темна"
-
-#: lib/uadebate_web/components/site.ex:82
-#, elixir-autogen, elixir-format
-msgid "Theme: light"
-msgstr "Тема: світла"
-
-#: lib/uadebate_web/components/site.ex:86
-#, elixir-autogen, elixir-format
-msgid "Theme: light, auto or dark"
-msgstr "Тема: світла, авто чи темна"
-
-#: lib/uadebate_web/components/site.ex:36
-#, elixir-autogen, elixir-format
-msgid "beta"
-msgstr "бета"
-
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:20
-#, elixir-autogen, elixir-format
-msgid "Admins only. Turn it off to keep every event off the public site."
-msgstr "Лише для адміністраторів. Вимкніть, щоб жодна подія не потрапляла на публічний сайт."
-
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:19
-#, elixir-autogen, elixir-format
-msgid "Calendar visible to the public"
-msgstr "Календар видно всім"
-
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:29
-#, elixir-autogen, elixir-format
-msgid "Off"
-msgstr "Вимк."
-
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:25
-#, elixir-autogen, elixir-format
-msgid "On"
-msgstr "Увімк."
-
-#: lib/uadebate_web/controllers/calendar_html/index.html.heex:22
-#, elixir-autogen, elixir-format
-msgid "The calendar is not public yet. Tournaments will appear here soon."
-msgstr "Календар поки не публічний. Турніри скоро з'являться тут."
-
-#: lib/uadebate_web/controllers/manage/calendar_controller.ex:38
-#, elixir-autogen, elixir-format
-msgid "The calendar is private: no event reaches the public site."
-msgstr "Календар приватний: жодна подія не потрапляє на публічний сайт."
-
-#: lib/uadebate_web/controllers/manage/calendar_controller.ex:37
-#, elixir-autogen, elixir-format
-msgid "The calendar is public again."
-msgstr "Календар знову публічний."
-
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex:12
-#, elixir-autogen, elixir-format
-msgid "The whole calendar is private: no event reaches the public site, the home page or the iCal feed. You can still prepare events here."
-msgstr "Увесь календар приватний: жодна подія не потрапляє на публічний сайт, головну чи в стрічку iCal. Готувати події тут можна й далі."
-
-#: lib/uadebate_web/components/site.ex:426
-#, elixir-autogen, elixir-format
-msgid "Chernihiv"
-msgstr "Чернігів"
-
-#: lib/uadebate_web/components/site.ex:427
-#, elixir-autogen, elixir-format
-msgid "Chernivtsi"
-msgstr "Чернівці"
-
-#: lib/uadebate_web/components/site.ex:428
-#, elixir-autogen, elixir-format
-msgid "Dnipro"
-msgstr "Дніпро"
-
-#: lib/uadebate_web/components/site.ex:429
-#, elixir-autogen, elixir-format
-msgid "Ivano-Frankivsk"
-msgstr "Івано-Франківськ"
-
-#: lib/uadebate_web/components/site.ex:430
-#, elixir-autogen, elixir-format
-msgid "Kharkiv"
-msgstr "Харків"
-
-#: lib/uadebate_web/components/site.ex:431
-#, elixir-autogen, elixir-format
-msgid "Khmelnytskyi"
-msgstr "Хмельницький"
-
-#: lib/uadebate_web/components/site.ex:432
-#, elixir-autogen, elixir-format
-msgid "Kremenchuk"
-msgstr "Кременчук"
-
-#: lib/uadebate_web/components/site.ex:433
-#, elixir-autogen, elixir-format
-msgid "Krolevets"
-msgstr "Кролевець"
-
-#: lib/uadebate_web/components/site.ex:434
-#, elixir-autogen, elixir-format
-msgid "Kyiv"
-msgstr "Київ"
-
-#: lib/uadebate_web/components/site.ex:435
-#, elixir-autogen, elixir-format
-msgid "Lutsk"
-msgstr "Луцьк"
-
-#: lib/uadebate_web/components/site.ex:436
-#, elixir-autogen, elixir-format
-msgid "Lviv"
-msgstr "Львів"
-
-#: lib/uadebate_web/components/site.ex:437
-#, elixir-autogen, elixir-format
-msgid "Odesa"
-msgstr "Одеса"
-
-#: lib/uadebate_web/components/site.ex:438
-#, elixir-autogen, elixir-format
-msgid "Ostroh"
-msgstr "Острог"
-
-#: lib/uadebate_web/components/site.ex:439
-#, elixir-autogen, elixir-format
-msgid "Poltava"
-msgstr "Полтава"
-
-#: lib/uadebate_web/components/site.ex:440
-#, elixir-autogen, elixir-format
-msgid "Rivne"
-msgstr "Рівне"
-
-#: lib/uadebate_web/components/site.ex:441
-#, elixir-autogen, elixir-format
-msgid "Vinnytsia"
-msgstr "Вінниця"
-
-#: lib/uadebate_web/components/site.ex:442
-#, elixir-autogen, elixir-format
-msgid "Zaporizhzhia"
-msgstr "Запоріжжя"
-
-#: lib/uadebate_web/components/site.ex:544
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "April"
-msgstr "квітня"
-
-#: lib/uadebate_web/components/site.ex:548
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "August"
-msgstr "серпня"
-
-#: lib/uadebate_web/components/site.ex:552
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "December"
-msgstr "грудня"
-
-#: lib/uadebate_web/components/site.ex:542
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "February"
-msgstr "лютого"
-
-#: lib/uadebate_web/components/site.ex:541
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "January"
-msgstr "січня"
-
-#: lib/uadebate_web/components/site.ex:547
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "July"
-msgstr "липня"
-
-#: lib/uadebate_web/components/site.ex:546
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "June"
-msgstr "червня"
-
-#: lib/uadebate_web/components/site.ex:543
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "March"
-msgstr "березня"
-
-#: lib/uadebate_web/components/site.ex:545
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "May"
-msgstr "травня"
-
-#: lib/uadebate_web/components/site.ex:551
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "November"
-msgstr "листопада"
-
-#: lib/uadebate_web/components/site.ex:550
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "October"
-msgstr "жовтня"
-
-#: lib/uadebate_web/components/site.ex:549
-#, elixir-autogen, elixir-format
-msgctxt "in a date"
-msgid "September"
-msgstr "вересня"
-
-#: lib/uadebate_web/components/site.ex:518
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Apr"
-msgstr "кві"
-
-#: lib/uadebate_web/components/site.ex:522
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Aug"
-msgstr "сер"
-
-#: lib/uadebate_web/components/site.ex:526
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Dec"
-msgstr "гру"
-
-#: lib/uadebate_web/components/site.ex:516
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Feb"
-msgstr "лют"
-
-#: lib/uadebate_web/components/site.ex:515
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Jan"
-msgstr "січ"
-
-#: lib/uadebate_web/components/site.ex:521
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Jul"
-msgstr "лип"
-
-#: lib/uadebate_web/components/site.ex:520
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Jun"
-msgstr "чер"
-
-#: lib/uadebate_web/components/site.ex:517
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Mar"
-msgstr "бер"
-
-#: lib/uadebate_web/components/site.ex:499
-#: lib/uadebate_web/components/site.ex:519
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "May"
-msgstr "тра"
-
-#: lib/uadebate_web/components/site.ex:525
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Nov"
-msgstr "лис"
-
-#: lib/uadebate_web/components/site.ex:524
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Oct"
-msgstr "жов"
-
-#: lib/uadebate_web/components/site.ex:523
-#, elixir-autogen, elixir-format
-msgctxt "short month"
-msgid "Sep"
-msgstr "вер"
-
-#: lib/uadebate_web/controllers/page_html/about.html.heex:46
+#: lib/uadebate_web/controllers/page_html/about.html.heex
 #, elixir-autogen, elixir-format
 msgid "%{count} city. Click a city to see its clubs"
 msgid_plural "%{count} cities. Click a city to see its clubs"
@@ -1364,242 +28,1547 @@ msgstr[0] "%{count} місто. Натисніть на місто, щоб по�
 msgstr[1] "%{count} міста. Натисніть на місто, щоб побачити його клуби"
 msgstr[2] "%{count} міст. Натисніть на місто, щоб побачити його клуби"
 
-#: lib/uadebate_web/controllers/page_html/home.html.heex:2
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
-msgid "The site is under construction: some of its content is still being written."
-msgstr "Сайт у розробці: частину його змісту ще пишуть."
+msgid "%{count} club"
+msgid_plural "%{count} clubs"
+msgstr[0] "%{count} клуб"
+msgstr[1] "%{count} клуби"
+msgstr[2] "%{count} клубів"
 
-#: lib/uadebate_web/controllers/manage/html.ex:60
+#: lib/uadebate_web/controllers/manage/people_controller.ex
 #, elixir-autogen, elixir-format
-msgid "All tags"
-msgstr "Усі мітки"
+msgid "%{name} can now manage the site. Send them the link uadebate.com/manage."
+msgstr "%{name} тепер може керувати сайтом. Надішліть людині посилання uadebate.com/manage."
 
-#: lib/uadebate_web/controllers/manage/html.ex:117
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/news_html/show.html.heex
 #, elixir-autogen, elixir-format
-msgid "Blue"
-msgstr "Синій"
+msgid "%{n} min read"
+msgstr "%{n} хв читання"
 
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:34
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:62
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:69
+#: lib/uadebate_web/controllers/page_html.ex
 #, elixir-autogen, elixir-format
-msgid "Colour"
-msgstr "Колір"
+msgid "11 regional and 2 city branches; the first English-language league"
+msgstr "11 обласних і 2 міських осередки; перша англомовна ліга"
 
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:53
+#: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
-msgid "Cover image"
-msgstr "Обкладинка"
+msgid "A debate community since 2011"
+msgstr "Дебатна спільнота з 2011 року"
 
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:5
+#: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
-msgid "Edit tag"
-msgstr "Редагувати мітку"
+msgid "APF"
+msgstr "АПФ"
 
-#: lib/uadebate_web/controllers/manage/html.ex:111
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/page_controller.ex
 #, elixir-autogen, elixir-format
-msgid "Gray"
-msgstr "Сірий"
+msgid "About"
+msgstr "Про ФДУ"
 
-#: lib/uadebate_web/controllers/manage/html.ex:115
+#: lib/uadebate_web/controllers/club_html/show.html.heex
 #, elixir-autogen, elixir-format
-msgid "Green"
-msgstr "Зелений"
+msgid "About the club"
+msgstr "Про клуб"
 
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:72
+#: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
-msgid "Image description"
-msgstr "Опис зображення"
+msgid "About the federation"
+msgstr "Про Федерацію"
 
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:67
+#: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
-msgid "JPEG, PNG or WebP, up to %{mb} MB. Without an image the card shows a gradient."
-msgstr "JPEG, PNG або WebP, до %{mb} МБ. Без зображення картка показує градієнт."
+msgid "Active clubs"
+msgstr "Активні клуби"
 
-#: lib/uadebate_web/controllers/calendar_controller.ex:31
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
 #, elixir-autogen, elixir-format
-msgid "Language: %{language}"
-msgstr "Мова: %{language}"
+msgid "Address"
+msgstr "Адреса"
 
-#: lib/uadebate_web/controllers/manage/html.ex:91
+#: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
-msgid "Manage tags"
-msgstr "Керувати мітками"
+msgid "Admin"
+msgstr "Адміністратор"
 
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:21
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
 #, elixir-autogen, elixir-format
-msgid "New tag"
-msgstr "Нова мітка"
+msgid "Admins only. Turn it off to keep every event off the public site."
+msgstr "Лише для адміністраторів. Вимкніть, щоб жодна подія не потрапляла на публічний сайт."
 
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:48
+#: lib/uadebate_web/controllers/calendar_html.ex
+#: lib/uadebate_web/controllers/club_html.ex
+#: lib/uadebate_web/controllers/news_html/index.html.heex
 #, elixir-autogen, elixir-format
-msgid "No news with this tag."
-msgstr "Немає новин із цією міткою."
+msgid "All"
+msgstr "Усі"
 
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:78
+#: lib/uadebate_web/controllers/club_html/index.html.heex
 #, elixir-autogen, elixir-format
-msgid "No tags yet."
-msgstr "Міток ще немає."
+msgid "All cities"
+msgstr "Усі міста"
 
-#: lib/uadebate_web/controllers/manage/news_controller.ex:73
-#, elixir-autogen, elixir-format
-msgid "Only JPEG, PNG or WebP images."
-msgstr "Лише зображення JPEG, PNG або WebP."
-
-#: lib/uadebate_web/controllers/manage/html.ex:113
-#, elixir-autogen, elixir-format
-msgid "Orange"
-msgstr "Помаранчевий"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:80
-#, elixir-autogen, elixir-format
-msgid "Other"
-msgstr "Інша"
-
-#: lib/uadebate_web/controllers/manage/html.ex:90
-#, elixir-autogen, elixir-format
-msgid "Private: only content managers see tags."
-msgstr "Приватно: мітки бачать лише контент-менеджери."
-
-#: lib/uadebate_web/controllers/manage/html.ex:118
-#, elixir-autogen, elixir-format
-msgid "Purple"
-msgstr "Фіолетовий"
-
-#: lib/uadebate_web/controllers/manage/html.ex:112
-#, elixir-autogen, elixir-format
-msgid "Red"
-msgstr "Червоний"
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:58
-#, elixir-autogen, elixir-format
-msgid "Remove the image"
-msgstr "Прибрати зображення"
-
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:61
-#, elixir-autogen, elixir-format
-msgid "Tag"
-msgstr "Мітка"
-
-#: lib/uadebate_web/controllers/manage/tag_controller.ex:45
-#, elixir-autogen, elixir-format
-msgid "Tag deleted: it is gone from every event and news post."
-msgstr "Мітку видалено: її прибрано з усіх подій і новин."
-
-#: lib/uadebate_web/controllers/manage/tag_controller.ex:14
-#: lib/uadebate_web/controllers/manage/tag_controller.ex:33
-#, elixir-autogen, elixir-format
-msgid "Tag saved."
-msgstr "Мітку збережено."
-
-#: lib/uadebate_web/components/site.ex:128
-#: lib/uadebate_web/controllers/manage/html.ex:81
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:19
-#: lib/uadebate_web/controllers/manage/html/news_index.html.heex:33
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:3
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:4
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:56
-#: lib/uadebate_web/controllers/manage/tag_controller.ex:52
-#, elixir-autogen, elixir-format
-msgid "Tags"
-msgstr "Мітки"
-
-#: lib/uadebate_web/controllers/manage/html/tags.html.heex:23
-#, elixir-autogen, elixir-format
-msgid "Tags mark events and news for the editors, a status for example. They are private: the public site never shows them."
-msgstr "Мітки позначають події та новини для редакторів, наприклад статус. Вони приватні: публічний сайт їх ніколи не показує."
-
-#: lib/uadebate_web/controllers/manage/html.ex:116
-#, elixir-autogen, elixir-format
-msgid "Teal"
-msgstr "Бірюзовий"
-
-#: lib/uadebate_web/controllers/manage/news_controller.ex:72
-#, elixir-autogen, elixir-format
-msgid "The image is larger than 3 MB."
-msgstr "Зображення більше за 3 МБ."
-
-#: lib/uadebate_web/controllers/manage/html/news_form.html.heex:75
-#, elixir-autogen, elixir-format
-msgid "What the image shows, for people who cannot see it."
-msgstr "Що на зображенні, для тих, хто його не бачить."
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:84
-#, elixir-autogen, elixir-format
-msgid "Which language"
-msgstr "Яка мова"
-
-#: lib/uadebate_web/controllers/manage/html.ex:114
-#, elixir-autogen, elixir-format
-msgid "Yellow"
-msgstr "Жовтий"
-
-#: lib/uadebate_web/controllers/manage/html/event_form.html.heex:90
-#, elixir-autogen, elixir-format
-msgid "e.g. Polish"
-msgstr "наприклад, польська"
-
-#: lib/uadebate_web/controllers/calendar_html.ex:32
+#: lib/uadebate_web/controllers/calendar_html.ex
 #, elixir-autogen, elixir-format
 msgid "All events"
 msgstr "Усі події"
 
-#: lib/uadebate_web/controllers/calendar_html.ex:26
+#: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
-msgid "Month"
-msgstr "Місяць"
+msgid "All news"
+msgstr "Усі новини"
 
-#: lib/uadebate_web/controllers/calendar_html.ex:81
+#: lib/uadebate_web/controllers/manage/html.ex
 #, elixir-autogen, elixir-format
-msgid "No events yet."
-msgstr "Подій поки немає."
+msgid "All tags"
+msgstr "Усі мітки"
 
-#: lib/uadebate_web/controllers/calendar_html.ex:80
+#: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
-msgid "Nothing planned this year."
-msgstr "Цього року нічого не заплановано."
+msgid "Announcements"
+msgstr "Анонси"
 
-#: lib/uadebate_web/controllers/calendar_html.ex:29
+#: lib/uadebate_web/controllers/news_html/index.html.heex
 #, elixir-autogen, elixir-format
-msgid "Year"
-msgstr "Рік"
+msgid "Announcements, tournament results, interviews and tips for debaters."
+msgstr "Анонси, результати турнірів, інтерв'ю та поради для дебатерів."
 
-#: lib/uadebate_web/cab_operator.ex:19
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Apr"
+msgstr "кві"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "April"
+msgstr "Квітень"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "April"
+msgstr "квітня"
+
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Audience"
+msgstr "Аудиторія"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Aug"
+msgstr "сер"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "August"
+msgstr "Серпень"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "August"
+msgstr "серпня"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "BP"
+msgstr "БПФ"
+
+#: lib/uadebate_web/controllers/manage/news_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Back to draft: only content managers see it."
+msgstr "Знову чернетка: її бачать лише контент-менеджери."
+
+#: lib/uadebate_web/controllers/error_html.ex
+#, elixir-autogen, elixir-format
+msgid "Back to the home page"
+msgstr "На головну"
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Blue"
+msgstr "Синій"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Branches"
+msgstr "Осередки"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Branches of the federation"
+msgstr "Осередки Федерації"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Building a successful community of well-rounded, informed and socially active young people united by the game of debate"
+msgstr "Розвиток успішної спільноти різносторонньої, обізнаної та соціально активної молоді, об'єднаної грою дебати"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Cabinet"
+msgstr "Кабінет"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Cabinet (cab)"
+msgstr "Кабінет (cab)"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Cabinet support"
+msgstr "Підтримка кабінету"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/calendar_controller.ex
+#: lib/uadebate_web/controllers/calendar_html/index.html.heex
+#: lib/uadebate_web/controllers/manage/calendar_controller.ex
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Calendar"
+msgstr "Календар"
+
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#, elixir-autogen, elixir-format
+msgid "Calendar visible to the public"
+msgstr "Календар видно всім"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Chernihiv"
+msgstr "Чернігів"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Chernivtsi"
+msgstr "Чернівці"
+
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Cities"
+msgstr "Міста"
+
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "City"
+msgstr "Місто"
+
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Click a city to show its clubs"
+msgstr "Натисніть на місто, щоб показати його клуби"
+
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#: lib/uadebate_web/controllers/club_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "Club"
+msgstr "Клуб"
+
+#: lib/uadebate_web/controllers/club_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "Club details are kept by the club in cab."
+msgstr "Дані клубу веде сам клуб у cab."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Club event"
+msgstr "Клубна подія"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Club events"
+msgstr "Клубні події"
+
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Club map"
+msgstr "Мапа клубів"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/club_controller.ex
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#: lib/uadebate_web/controllers/club_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "Clubs"
+msgstr "Клуби"
+
+#: lib/uadebate_web/cab_operator.ex
 #, elixir-autogen, elixir-format
 msgid "Clubs across Ukraine run weekly practice rounds — pick one and come debate. Free for every Ukrainian club."
 msgstr "Клуби по всій Україні щотижня проводять тренувальні раунди — оберіть свій і приходьте дебатувати. Безкоштовно для кожного українського клубу."
 
-#: lib/uadebate_web/cab_operator.ex:25
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Clubs across the country. Register for tournaments, find a club near you and sharpen your critical thinking."
+msgstr "Клуби по всій країні. Реєструйтеся на турніри, знайдіть клуб поруч і розвивайте критичне мислення."
+
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "Colour"
+msgstr "Колір"
+
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#, elixir-autogen, elixir-format
+msgid "Coming up"
+msgstr "Найближче"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Community"
+msgstr "Спільнота"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/club_html/show.html.heex
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Contact"
+msgstr "Контакти"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Content manager"
+msgstr "Контент-менеджер"
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "Content managers"
+msgstr "Контент-менеджери"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Cover image"
+msgstr "Обкладинка"
+
+#: lib/uadebate_web/cab_operator.ex
 #, elixir-autogen, elixir-format
 msgid "DFU"
 msgstr "ФДУ"
 
-#: lib/uadebate_web/cab_operator.ex:24
+#: lib/uadebate_web/cab_operator.ex
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
-msgid "Run by the NGO Debate Federation of Ukraine (ВМГО «Федерація Дебатів України»)."
-msgstr "Проєкт ВМГО «Федерація Дебатів України»."
+msgid "Debate Federation of Ukraine"
+msgstr "Федерація Дебатів України"
 
-#: lib/uadebate_web/controllers/error_html.ex:57
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Debate clubs of Ukraine"
+msgstr "Дебатні клуби України"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Debate is a game where you can develop the skills of argumentation across a wide range of topics."
+msgstr "Дебати є грою, де можна розвинути навички аргументації у широкому просторі тем."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Dec"
+msgstr "гру"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "December"
+msgstr "Грудень"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "December"
+msgstr "грудня"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "Delete"
+msgstr "Видалити"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Details"
+msgstr "Докладніше"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Developing the intellectual potential of active youth, the foundation of society, through the unique technology of debate"
+msgstr "Розвиток інтелектуального потенціалу активної молоді, як фундаменту суспільства, через унікальну технологію дебати"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Dnipro"
+msgstr "Дніпро"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Documents"
+msgstr "Документи"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Draft"
+msgstr "Чернетка"
+
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#, elixir-autogen, elixir-format
+msgid "Drafts"
+msgstr "Чернетки"
+
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "Edit"
+msgstr "Редагувати"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Edit event"
+msgstr "Редагувати подію"
+
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "Edit tag"
+msgstr "Редагувати мітку"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Ends"
+msgstr "Закінчується"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "English"
+msgstr "Англійська"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Event"
+msgstr "Подія"
+
+#: lib/uadebate_web/controllers/manage/event_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Event deleted."
+msgstr "Подію видалено."
+
+#: lib/uadebate_web/controllers/manage/event_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Event saved."
+msgstr "Подію збережено."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Feb"
+msgstr "лют"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "February"
+msgstr "Лютий"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "February"
+msgstr "лютого"
+
+#: lib/uadebate_web/controllers/news_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Federation news"
+msgstr "Новини Федерації"
+
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Find a club"
+msgstr "Знайти клуб"
+
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Find a club in your city: format, language, who it is for and when it meets."
+msgstr "Знайдіть клуб у своєму місті: формат, мова, для кого він і коли збирається."
+
+#: lib/uadebate_web/controllers/page_html.ex
+#, elixir-autogen, elixir-format
+msgid "First Ukrainian Debate Championship"
+msgstr "Перший Чемпіонат України з дебатів"
+
+#: lib/uadebate_web/controllers/page_html.ex
+#, elixir-autogen, elixir-format
+msgid "First debate tournament, the Federation Cup in Vinnytsia, for members of the organisation"
+msgstr "Перший дебатний турнір, Кубок Федерації у Вінниці, для членів організації"
+
+#: lib/uadebate_web/controllers/page_html.ex
+#, elixir-autogen, elixir-format
+msgid "First founding conference of the All-Ukrainian youth organisation \"Debate Federation of Ukraine\""
+msgstr "Перша установча конференція Всеукраїнської молодіжної організації «Федерація Дебатів України»"
+
+#: lib/uadebate_web/controllers/page_html.ex
+#, elixir-autogen, elixir-format
+msgid "First founding conference of the federation"
+msgstr "Перша установча конференція Федерації"
+
+#: lib/uadebate_web/controllers/page_html.ex
+#, elixir-autogen, elixir-format
+msgid "First tournament, the Federation Cup in Vinnytsia"
+msgstr "Перший турнір, Кубок Федерації у Вінниці"
+
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Format"
+msgstr "Формат"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Fri"
+msgstr "Пт"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Goal"
+msgstr "Мета"
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "Grant the content-manager role"
+msgstr "Надати роль контент-менеджера"
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "Grant the role"
+msgstr "Надати роль"
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "Granted by"
+msgstr "Надав"
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Gray"
+msgstr "Сірий"
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Green"
+msgstr "Зелений"
+
+#: lib/uadebate_web/controllers/club_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "Head"
+msgstr "Голова"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Home"
+msgstr "Головна"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Image description"
+msgstr "Опис зображення"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Interviews"
+msgstr "Інтерв'ю"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Ivano-Frankivsk"
+msgstr "Івано-Франківськ"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "JPEG, PNG or WebP, up to %{mb} MB. Without an image the card shows a gradient."
+msgstr "JPEG, PNG або WebP, до %{mb} МБ. Без зображення картка показує градієнт."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Jan"
+msgstr "січ"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "January"
+msgstr "Січень"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "January"
+msgstr "січня"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Jul"
+msgstr "лип"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "July"
+msgstr "Липень"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "July"
+msgstr "липня"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Jun"
+msgstr "чер"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "June"
+msgstr "Червень"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "June"
+msgstr "червня"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Kharkiv"
+msgstr "Харків"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Khmelnytskyi"
+msgstr "Хмельницький"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Kind"
+msgstr "Вид"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Kremenchuk"
+msgstr "Кременчук"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Krolevets"
+msgstr "Кролевець"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Kyiv"
+msgstr "Київ"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Language"
+msgstr "Мова"
+
+#: lib/uadebate_web/controllers/calendar_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Language: %{language}"
+msgstr "Мова: %{language}"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Link"
+msgstr "Посилання"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Lutsk"
+msgstr "Луцьк"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Lviv"
+msgstr "Львів"
+
+#: lib/uadebate_web/controllers/manage/dash_controller.ex
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#, elixir-autogen, elixir-format
+msgid "Manage"
+msgstr "Керування"
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Manage tags"
+msgstr "Керувати мітками"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Map of debate clubs in Ukraine"
+msgstr "Мапа дебатних клубів України"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Mar"
+msgstr "бер"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "March"
+msgstr "Березень"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "March"
+msgstr "березня"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Markdown: ## for a heading, **bold**, [a link](https://...), > for a quote."
+msgstr "Markdown: ## для заголовка, **жирний**, [посилання](https://...), > для цитати."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "May"
+msgstr "травня"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "May"
+msgstr "тра"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Means"
+msgstr "Засоби"
+
+#: lib/uadebate_web/controllers/club_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "Meets"
+msgstr "Зустрічі"
+
+#: lib/uadebate_web/controllers/club_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "Members"
+msgstr "Члени"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Mission"
+msgstr "Місія"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Mon"
+msgstr "Пн"
+
+#: lib/uadebate_web/controllers/calendar_html.ex
+#, elixir-autogen, elixir-format
+msgid "Month"
+msgstr "Місяць"
+
+#: lib/uadebate_web/controllers/news_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "More news"
+msgstr "Більше новин"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "New"
+msgstr "Нова"
+
+#: lib/uadebate_web/controllers/manage/event_controller.ex
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "New event"
+msgstr "Нова подія"
+
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "New tag"
+msgstr "Нова мітка"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#: lib/uadebate_web/controllers/manage/news_controller.ex
+#: lib/uadebate_web/controllers/news_controller.ex
+#: lib/uadebate_web/controllers/news_html/index.html.heex
+#: lib/uadebate_web/controllers/news_html/show.html.heex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "News"
+msgstr "Новини"
+
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Next tournament"
+msgstr "Наступний турнір"
+
+#: lib/uadebate_web/controllers/manage/people_controller.ex
+#, elixir-autogen, elixir-format
+msgid "No cab account has that username or e-mail. They sign in to cab once first."
+msgstr "Жоден акаунт у cab не має такого імені користувача чи e-mail. Спершу людина має один раз увійти в cab."
+
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "No club matches these filters."
+msgstr "Жоден клуб не відповідає цим фільтрам."
+
+#: lib/uadebate_web/controllers/calendar_html.ex
+#, elixir-autogen, elixir-format
+msgid "No events yet."
+msgstr "Подій поки немає."
+
+#: lib/uadebate_web/controllers/news_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "No news here yet."
+msgstr "Тут поки немає новин."
+
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#, elixir-autogen, elixir-format
+msgid "No news with this tag."
+msgstr "Немає новин із цією міткою."
+
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "No news yet."
+msgstr "Новин поки немає."
+
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#, elixir-autogen, elixir-format
+msgid "No news yet. Write the first one."
+msgstr "Новин поки немає. Напишіть першу."
+
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "No tags yet."
+msgstr "Міток ще немає."
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "Nobody holds the role yet."
+msgstr "Цієї ролі поки ні в кого немає."
+
+#: lib/uadebate_web/controllers/calendar_html.ex
+#, elixir-autogen, elixir-format
+msgid "Nothing planned this month."
+msgstr "Цього місяця нічого не заплановано."
+
+#: lib/uadebate_web/controllers/calendar_html.ex
+#, elixir-autogen, elixir-format
+msgid "Nothing planned this year."
+msgstr "Цього року нічого не заплановано."
+
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Nothing planned yet."
+msgstr "Поки нічого не заплановано."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Nov"
+msgstr "лис"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "November"
+msgstr "Листопад"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "November"
+msgstr "листопада"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Oct"
+msgstr "жов"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "October"
+msgstr "Жовтень"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "October"
+msgstr "жовтня"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Odesa"
+msgstr "Одеса"
+
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#, elixir-autogen, elixir-format
+msgid "Of them private"
+msgstr "З них приватних"
+
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#, elixir-autogen, elixir-format
+msgid "Off"
+msgstr "Вимк."
+
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#, elixir-autogen, elixir-format
+msgid "On"
+msgstr "Увімк."
+
+#: lib/uadebate_web/controllers/club_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "On the map"
+msgstr "На мапі"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "One or two sentences shown above the article."
+msgstr "Одне-два речення над статтею."
+
+#: lib/uadebate_web/controllers/manage/news_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Only JPEG, PNG or WebP images."
+msgstr "Лише зображення JPEG, PNG або WebP."
+
+#: lib/uadebate_web/controllers/club_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "Open in cab"
+msgstr "Відкрити в cab"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Open to all"
+msgstr "Відкрито для всіх"
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Orange"
+msgstr "Помаранчевий"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Ostroh"
+msgstr "Острог"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Other"
+msgstr "Інша"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Other events"
+msgstr "Інші події"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Other format"
+msgstr "Інший формат"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Other language"
+msgstr "Інша мова"
+
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Our story"
+msgstr "Наша історія"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#, elixir-autogen, elixir-format
+msgid "Overview"
+msgstr "Огляд"
+
+#: lib/uadebate_web/controllers/error_html.ex
 #, elixir-autogen, elixir-format
 msgid "Page not found"
 msgstr "Сторінку не знайдено"
 
-#: lib/uadebate_web/controllers/error_html.ex:58
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#: lib/uadebate_web/controllers/manage/people_controller.ex
+#, elixir-autogen, elixir-format
+msgid "People"
+msgstr "Люди"
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "Person"
+msgstr "Людина"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Platform"
+msgstr "Платформа"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Poltava"
+msgstr "Полтава"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Privacy policy"
+msgstr "Політика конфіденційності"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#, elixir-autogen, elixir-format
+msgid "Private"
+msgstr "Приватна"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Private: only content managers see it"
+msgstr "Приватна: її бачать лише контент-менеджери"
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Private: only content managers see tags."
+msgstr "Приватно: мітки бачать лише контент-менеджери."
+
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Public"
+msgstr "Публічна"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Public events appear on the calendar, the home page and the iCal feed."
+msgstr "Публічні події з'являються в календарі, на головній і в стрічці iCal."
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Publish"
+msgstr "Опублікувати"
+
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Published %{date}"
+msgstr "Опубліковано %{date}"
+
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#, elixir-autogen, elixir-format
+msgid "Published news"
+msgstr "Опубліковані новини"
+
+#: lib/uadebate_web/controllers/manage/news_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Published: everyone can read it now."
+msgstr "Опубліковано: тепер її може прочитати кожен."
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Purple"
+msgstr "Фіолетовий"
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Red"
+msgstr "Червоний"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Registration or the tournament's page, https://..."
+msgstr "Реєстрація або сторінка турніру, https://..."
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Remove the image"
+msgstr "Прибрати зображення"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Results"
+msgstr "Результати"
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "Revoke"
+msgstr "Забрати"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Rivne"
+msgstr "Рівне"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Rubric"
+msgstr "Рубрика"
+
+#: lib/uadebate_web/cab_operator.ex
+#, elixir-autogen, elixir-format
+msgid "Run by the NGO Debate Federation of Ukraine (ВМГО «Федерація Дебатів України»)."
+msgstr "Проєкт ВМГО «Федерація Дебатів України»."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Sat"
+msgstr "Сб"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "Save"
+msgstr "Зберегти"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Saved as a draft until you publish it."
+msgstr "Збережено як чернетку, доки ви її не опублікуєте."
+
+#: lib/uadebate_web/controllers/manage/news_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Saved as a draft."
+msgstr "Збережено як чернетку."
+
+#: lib/uadebate_web/controllers/manage/news_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Saved."
+msgstr "Збережено."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "School students"
+msgstr "Школярі"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "short month"
+msgid "Sep"
+msgstr "вер"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "September"
+msgstr "Вересень"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgctxt "in a date"
+msgid "September"
+msgstr "вересня"
+
+#: lib/uadebate_web/controllers/club_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Show"
+msgstr "Показати"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Sign out"
+msgstr "Вийти"
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "Since"
+msgstr "Від"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Site"
+msgstr "Сайт"
+
+#: lib/uadebate_web/controllers/error_html.ex
 #, elixir-autogen, elixir-format
 msgid "Something went wrong"
 msgstr "Щось пішло не так"
 
-#: lib/uadebate_web/controllers/error_html.ex:61
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Starts"
+msgstr "Починається"
+
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Status"
+msgstr "Статус"
+
+#: lib/uadebate_web/controllers/calendar_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Subscribe to the calendar"
+msgstr "Підписатися на календар"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Summary"
+msgstr "Анонс"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Sun"
+msgstr "Нд"
+
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "Tag"
+msgstr "Мітка"
+
+#: lib/uadebate_web/controllers/manage/tag_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Tag deleted: it is gone from every event and news post."
+msgstr "Мітку видалено: її прибрано з усіх подій і новин."
+
+#: lib/uadebate_web/controllers/manage/tag_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Tag saved."
+msgstr "Мітку збережено."
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/manage/html.ex
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#: lib/uadebate_web/controllers/manage/tag_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Tags"
+msgstr "Мітки"
+
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "Tags mark events and news for the editors, a status for example. They are private: the public site never shows them."
+msgstr "Мітки позначають події та новини для редакторів, наприклад статус. Вони приватні: публічний сайт їх ніколи не показує."
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Teal"
+msgstr "Бірюзовий"
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Telegram"
+msgstr "Telegram"
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "Terms of use"
+msgstr "Умови користування"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/tags.html.heex
+#, elixir-autogen, elixir-format
+msgid "Text"
+msgstr "Текст"
+
+#: lib/uadebate_web/controllers/calendar_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "The calendar is not public yet. Tournaments will appear here soon."
+msgstr "Календар поки не публічний. Турніри скоро з'являться тут."
+
+#: lib/uadebate_web/controllers/manage/calendar_controller.ex
+#, elixir-autogen, elixir-format
+msgid "The calendar is private: no event reaches the public site."
+msgstr "Календар приватний: жодна подія не потрапляє на публічний сайт."
+
+#: lib/uadebate_web/controllers/manage/calendar_controller.ex
+#, elixir-autogen, elixir-format
+msgid "The calendar is public again."
+msgstr "Календар знову публічний."
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "The end of the link, /news/... Left empty, it is made from the title."
+msgstr "Кінець посилання, /news/... Якщо лишити порожнім, його буде зроблено з заголовка."
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "The federation"
+msgstr "Федерація"
+
+#: lib/uadebate_web/controllers/page_html.ex
+#, elixir-autogen, elixir-format
+msgid "The first English-language debate league was held in Kharkiv"
+msgstr "Проведено першу англомовну дебатну лігу у Харкові"
+
+#: lib/uadebate_web/controllers/manage/news_controller.ex
+#, elixir-autogen, elixir-format
+msgid "The image is larger than 3 MB."
+msgstr "Зображення більше за 3 МБ."
+
+#: lib/uadebate_web/controllers/page_html.ex
+#, elixir-autogen, elixir-format
+msgid "The number of branches grew to 11 regional and 2 city branches of the DFU"
+msgstr "Кількість осередків збільшилася до 11 обласних та 2 міських відділень ФДУ"
+
+#: lib/uadebate_web/controllers/manage/people_controller.ex
+#, elixir-autogen, elixir-format
+msgid "The role is revoked; it takes effect on their next request."
+msgstr "Роль забрано; це діє з наступного запиту людини."
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "The rules for the site and the cabinet"
+msgstr "Правила сайту і кабінету"
+
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "The site is under construction: some of its content is still being written."
+msgstr "Сайт у розробці: частину його змісту ще пишуть."
+
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#, elixir-autogen, elixir-format
+msgid "The whole calendar is private: no event reaches the public site, the home page or the iCal feed. You can still prepare events here."
+msgstr "Увесь календар приватний: жодна подія не потрапляє на публічний сайт, головну чи в стрічку iCal. Готувати події тут можна й далі."
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "Their exact cab username or e-mail."
+msgstr "Точне ім'я користувача в cab або e-mail."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Theme: auto"
+msgstr "Тема: авто"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Theme: dark"
+msgstr "Тема: темна"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Theme: light"
+msgstr "Тема: світла"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Theme: light, auto or dark"
+msgstr "Тема: світла, авто чи темна"
+
+#: lib/uadebate_web/controllers/error_html.ex
 #, elixir-autogen, elixir-format
 msgid "There is nothing at this address. It may have moved, or the link is mistyped."
 msgstr "За цією адресою нічого немає. Можливо, сторінку перенесено або посилання введено з помилкою."
 
-#: lib/uadebate_web/controllers/error_html.ex:63
+#: lib/uadebate_web/controllers/error_html.ex
 #, elixir-autogen, elixir-format
 msgid "This page cannot be shown."
 msgstr "Цю сторінку неможливо показати."
 
-#: lib/uadebate_web/controllers/error_html.ex:62
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Thu"
+msgstr "Чт"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Tips"
+msgstr "Поради"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Title"
+msgstr "Заголовок"
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "To a person who has signed in to cab at least once."
+msgstr "Людині, яка хоча б раз входила в cab."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Tournament"
+msgstr "Турнір"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Tournaments"
+msgstr "Турніри"
+
+#: lib/uadebate_web/controllers/calendar_html/index.html.heex
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#, elixir-autogen, elixir-format
+msgid "Tournaments and events"
+msgstr "Турніри та події"
+
+#: lib/uadebate_web/controllers/calendar_html/index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Tournaments first, plus trainings and club events across Ukraine."
+msgstr "Насамперед турніри, а також тренінги та клубні події по всій Україні."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Training"
+msgstr "Тренінг"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Trainings"
+msgstr "Тренінги"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Tue"
+msgstr "Вт"
+
+#: lib/uadebate_web/components/layouts.ex
+#, elixir-autogen, elixir-format
+msgid "UAdebate, the Debate Federation of Ukraine"
+msgstr "UAdebate, Федерація Дебатів України"
+
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Ukraine's debate community:"
+msgstr "Дебатна спільнота України:"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Ukrainian"
+msgstr "Українська"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "University students"
+msgstr "Студенти"
+
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#, elixir-autogen, elixir-format
+msgid "Unpublish"
+msgstr "Зняти з публікації"
+
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Upcoming events"
+msgstr "Найближчі події"
+
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "Upcoming tournaments"
+msgstr "Найближчі турніри"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "View"
+msgstr "Переглянути"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "View site"
+msgstr "Переглянути сайт"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Vinnytsia"
+msgstr "Вінниця"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Visibility"
+msgstr "Видимість"
+
+#: lib/uadebate_web/controllers/error_html.ex
 #, elixir-autogen, elixir-format
 msgid "We could not show this page. Please try again in a minute."
 msgstr "Не вдалося показати цю сторінку. Спробуйте ще раз за хвилину."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Wed"
+msgstr "Ср"
+
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "What the image shows, for people who cannot see it."
+msgstr "Що на зображенні, для тих, хто його не бачить."
+
+#: lib/uadebate_web/controllers/page_html/about.html.heex
+#, elixir-autogen, elixir-format
+msgid "What we store and why"
+msgstr "Що ми зберігаємо і навіщо"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "Which language"
+msgstr "Яка мова"
+
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/manage/html/news_form.html.heex
+#: lib/uadebate_web/controllers/manage/html/news_index.html.heex
+#: lib/uadebate_web/controllers/manage/news_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Write news"
+msgstr "Написати новину"
+
+#: lib/uadebate_web/controllers/calendar_html.ex
+#, elixir-autogen, elixir-format
+msgid "Year"
+msgstr "Рік"
+
+#: lib/uadebate_web/controllers/manage/html.ex
+#, elixir-autogen, elixir-format
+msgid "Yellow"
+msgstr "Жовтий"
+
+#: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#, elixir-autogen, elixir-format
+msgid "You reached this through the link you were given; it works only while you hold the role."
+msgstr "Ви потрапили сюди за посиланням, яке вам надали; воно діє, лише поки у вас є ця роль."
+
+#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#, elixir-autogen, elixir-format
+msgid "You see private events too: only content managers see them."
+msgstr "Ви бачите й приватні події: їх бачать лише контент-менеджери."
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "Zaporizhzhia"
+msgstr "Запоріжжя"
+
+#: lib/uadebate_web/components/site.ex
+#, elixir-autogen, elixir-format
+msgid "beta"
+msgstr "бета"
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "e.g. Polish"
+msgstr "наприклад, польська"
+
+#: lib/uadebate_web/controllers/manage/html/people.html.heex
+#, elixir-autogen, elixir-format
+msgid "set up from the server"
+msgstr "налаштовано із сервера"
+
+#: lib/uadebate_web/controllers/page_html/home.html.heex
+#, elixir-autogen, elixir-format
+msgid "tournaments, clubs, growth"
+msgstr "турніри, клуби, розвиток"
