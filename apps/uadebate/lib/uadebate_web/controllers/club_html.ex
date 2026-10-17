@@ -1,6 +1,8 @@
 defmodule UadebateWeb.ClubHTML do
   use UadebateWeb, :html
 
+  alias UadebateWeb.Clubs
+
   embed_templates "club_html/*"
 
   attr :name, :string, required: true

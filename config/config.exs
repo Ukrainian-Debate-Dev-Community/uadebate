@@ -35,6 +35,13 @@ config :uadebate, UadebateWeb.Endpoint,
 
 config :uadebate, :cab_url, "http://localhost:4000"
 
+# cab's club logos in development: beside uadebate's own uploads, in the
+# ignored uploads folder (cab's test.exs keeps its tmp folder; prod sets
+# CAB_UPLOADS_DIR in runtime.exs)
+if config_env() == :dev do
+  config :cab, :uploads_dir, Path.expand("../uploads/cab", __DIR__)
+end
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"

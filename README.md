@@ -98,6 +98,7 @@ cab's and uadebate.com's together:
 | `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET` | yes | sign-in with GitHub |
 | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | yes | sign-in with Google |
 | `UADEBATE_UPLOADS_DIR` | yes | folder for news cover images, served at `/uploads`; in the image `/app/uploads`, a persistent volume kept in the backups |
+| `CAB_UPLOADS_DIR` | yes | folder for cab's club logos, served by cab at `/uploads`; in the image `/app/cab-uploads`, a persistent volume kept in the backups |
 | `LEGAL_DIR` | yes | folder with `en/policy.md`, `en/terms.md` (and other languages); 404 without |
 | `SESSION_COOKIE_DOMAIN` | for sharing | e.g. `.uadebate.com`, so uadebate.com/manage sees the cab sign-in |
 | `CAB_URL` | no | cab's address as uadebate.com links it; defaults to `https://$PHX_HOST` |

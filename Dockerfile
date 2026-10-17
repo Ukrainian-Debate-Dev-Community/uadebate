@@ -57,9 +57,9 @@ ENV LANG=C.UTF-8 PHX_SERVER=true MIX_ENV=prod
 
 COPY --from=build --chown=opendebate:opendebate /app/_build/prod/rel/full ./
 USER opendebate
-# uadebate.com's news images (UADEBATE_UPLOADS_DIR); a volume mounted
-# here starts out owned by the app user
-RUN mkdir /app/uploads
+# uadebate.com's news images (UADEBATE_UPLOADS_DIR) and cab's club logos
+# (CAB_UPLOADS_DIR); a volume mounted here starts out owned by the app user
+RUN mkdir /app/uploads /app/cab-uploads
 
 EXPOSE 4000 4001
 HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \

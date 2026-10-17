@@ -2,7 +2,8 @@ defmodule UadebateWeb.Clubs do
   @moduledoc """
   Clubs as cab keeps them, read downward: every club that is not
   archived, with its public profile (name, city, meeting time, contacts,
-  format, language, audience). uadebate stores nothing about a club.
+  format, language, audience and logo). uadebate stores nothing
+  about a club.
   """
 
   def list, do: Cab.Clubs.list_clubs()
@@ -19,6 +20,9 @@ defmodule UadebateWeb.Clubs do
         nil
     end
   end
+
+  @doc "The club's logo as cab serves it (its API's logo_url), nil without one."
+  def logo_url(club), do: CabWeb.ClubProfile.logo_url(club)
 
   def city_counts(clubs) do
     clubs

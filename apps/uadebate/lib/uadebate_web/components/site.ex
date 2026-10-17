@@ -190,12 +190,14 @@ defmodule UadebateWeb.Site do
   attr :kicker, :string, required: true
   attr :title, :string, required: true
   attr :lead, :string, default: nil
+  attr :logo, :string, default: nil, doc: "an image beside the title (a club's logo)"
   slot :actions
 
   def page_head(assigns) do
     ~H"""
     <div class="ua-head">
-      <div>
+      <img :if={@logo} class="ua-logo ua-logo--lg" src={@logo} alt="" />
+      <div class="ua-head-text">
         <span class="ua-kicker">{@kicker}</span>
         <h1>{@title}</h1>
         <p :if={@lead} class="ua-lead">{@lead}</p>

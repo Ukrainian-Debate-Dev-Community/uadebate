@@ -208,6 +208,12 @@ if config_env() == :prod do
          System.get_env("UADEBATE_UPLOADS_DIR") ||
            raise("environment variable UADEBATE_UPLOADS_DIR is missing")
 
+  # cab's club logos: a persistent volume of its own, kept in the backups
+  config :cab,
+         :uploads_dir,
+         System.get_env("CAB_UPLOADS_DIR") ||
+           raise("environment variable CAB_UPLOADS_DIR is missing")
+
   config :cab, CabWeb.Endpoint,
     url: [host: host, port: 443, scheme: "https"],
     http: [
