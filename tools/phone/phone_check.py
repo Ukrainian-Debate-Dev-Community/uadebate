@@ -4,7 +4,7 @@
 # ///
 """Render the uadebate.com pages, and the cab pages its visitors reach
 (home, sign-in, My page, account, a club), as an iPhone 15 against the
-running dev stack (make up) and fail if any page scrolls sideways.
+running dev stack (make dev:up) and fail if any page scrolls sideways.
 cab's own full page list is checked in opendebate-cab.
 
     uv run tools/phone/phone_check.py [--shots DIR]

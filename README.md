@@ -34,19 +34,31 @@ from the server checkout next to this repo (`uadebate-server/legal`, or
 
 ```sh
 git submodule update --init --recursive
-make setup   # cab and its engine, the engine's packages, Elixir deps, databases
-make up      # engine on :3100, cab on :4000, uadebate.com on :4001
-make test    # dfu's and uadebate's tests (cab's run in opendebate-cab)
-make test-e2e    # cab's session walkthrough against the running stack
-make test-all
-make test-phone DEV_USER=<a cab username>  # uadebate's pages as an iPhone 15
-make fresh DEV_USER=<your cab username>    # wipe the databases, load demo data
-make sync-cab    # move the cab pin to opendebate-cab's latest nightly
+make setup        # cab and its engine, the engine's packages, Elixir deps, databases
+make dev:up       # engine on :3100, cab on :4000, uadebate.com on :4001 (make dev does the same)
+make test         # dfu's and uadebate's tests (cab's run in opendebate-cab)
+make test-all     # everything that runs without the stack
 ```
 
+The standard targets (`setup build test test-all lint fmt clean`) are
+local and never need the running stack. Targets named `dev:<x>` work on
+the local stack:
+
+| Command | Does |
+|---|---|
+| `make dev:up` / `make dev:down` / `make dev:restart` | start, stop, restart the engine, cab and uadebate.com |
+| `make dev:status` / `make dev:logs` | what is running / follow the logs in `.run/` |
+| `make dev:fresh DEV_USER=<your cab username>` | wipe the databases, load demo data |
+| `make dev:e2e` | cab's session walkthrough against the running stack |
+| `make dev:phone DEV_USER=<a cab username>` | uadebate's pages as an iPhone 15 |
+| `make dev:backfill` | record lifecycle facts on older cab session rows |
+| `make dev:bump-cab` | move the cab pin to opendebate-cab's latest release (`REF=<ref>` for another) |
+| `make dev:image` | build the release image locally (Docker needed) |
+
 The dev stack reads `.env` at the repo root (OAuth keys, engine
-secret). The engine reads `cab/engine/.env`; without one `make up` starts
-it with development settings and the root `.env`'s `ENGINE_JWT_SECRET`.
+secret). The engine reads `cab/engine/.env`; without one `make dev:up`
+starts it with development settings and the root `.env`'s
+`ENGINE_JWT_SECRET`.
 
 ## uadebate.com
 
@@ -71,7 +83,7 @@ example `.uadebate.com`) on cab the sign-in is shared.
   commit and pushes both. The tag publishes the image
   `ghcr.io/ukrainian-debate-dev-community/uadebate:vX.Y.Z` (and
   `:sha-<commit>`) with a GitHub release; the server deploys it.
-- `make image` builds the image locally (Docker needed).
+- `make dev:image` builds the image locally (Docker needed).
 
 The image runs the `full` release (cab on 4000, uadebate.com on 4001) and
 answers `GET /healthz` on both ports. Before starting a new version run the
