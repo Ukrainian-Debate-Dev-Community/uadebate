@@ -1,4 +1,3 @@
 [submodule "cab"]
 	path = cab
 	url = git@github.com:Ukrainian-Debate-Dev-Community/opendebate-cab.git
-	branch = nightly
