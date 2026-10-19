@@ -2,7 +2,7 @@ defmodule Uadebate.Events.Event do
   use Ecto.Schema
   import Ecto.Changeset
 
-  alias Uadebate.Text
+  alias Cab.Text
 
   @kinds ~w(tournament training club other)
   @visibilities ~w(public private)

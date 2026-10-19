@@ -17,7 +17,7 @@ defmodule Uadebate.Tags.Tag do
   def changeset(tag, attrs) do
     tag
     |> cast(attrs, [:name, :color])
-    |> Uadebate.Text.clean_text(:name, required: true, max: 40)
+    |> Cab.Text.clean_text(:name, required: true, max: 40)
     |> validate_required([:color])
     |> validate_inclusion(:color, @colors)
     |> unique_constraint(:name)

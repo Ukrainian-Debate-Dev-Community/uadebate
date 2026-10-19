@@ -2,7 +2,7 @@ defmodule Uadebate.News.Post do
   use Ecto.Schema
   import Ecto.Changeset
 
-  alias Uadebate.Text
+  alias Cab.Text
 
   @rubrics ~w(announcements results interviews tips community)
 
@@ -38,7 +38,8 @@ defmodule Uadebate.News.Post do
     |> Text.clean_text(:slug, max: 200)
     |> Text.clean_text(:image_alt, max: 200)
     |> Text.clean_text(:summary, max: 1000, multiline: true)
-    |> Text.clean_text(:body, max: 20_000, multiline: true, blank: "")
+    |> Text.clean_text(:body, max: 20_000, multiline: true)
+    |> then(&if(get_field(&1, :body), do: &1, else: put_change(&1, :body, "")))
     |> update_change(:slug, &slugify/1)
     |> put_slug()
     |> validate_required([:title, :slug, :rubric])
