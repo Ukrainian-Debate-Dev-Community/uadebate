@@ -2,6 +2,8 @@ defmodule Uadebate.Events.Event do
   use Ecto.Schema
   import Ecto.Changeset
 
+  alias Uadebate.Text
+
   @kinds ~w(tournament training club other)
   @visibilities ~w(public private)
   @languages ~w(uk en other)
@@ -45,11 +47,15 @@ defmodule Uadebate.Events.Event do
       :language,
       :language_other
     ])
+    |> Text.clean_text(:title, required: true, max: 200)
+    |> Text.clean_text([:city, :format], max: 80)
+    |> Text.clean_text(:link, max: 255)
+    |> Text.clean_text(:language_other, max: 60)
+    |> Text.clean_text(:details, max: 5000, multiline: true)
     |> validate_required([:title, :kind, :starts_on, :visibility])
     |> validate_inclusion(:kind, @kinds)
     |> validate_inclusion(:language, @languages)
     |> clear_language_other()
-    |> validate_length(:language_other, max: 60)
     |> validate_inclusion(:visibility, @visibilities)
     |> validate_format(:link, ~r{^https?://}, message: "must start with http:// or https://")
     |> validate_end()

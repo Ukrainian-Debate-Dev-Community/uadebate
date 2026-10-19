@@ -2,6 +2,8 @@ defmodule Uadebate.News.Post do
   use Ecto.Schema
   import Ecto.Changeset
 
+  alias Uadebate.Text
+
   @rubrics ~w(announcements results interviews tips community)
 
   schema "news_posts" do
@@ -32,11 +34,15 @@ defmodule Uadebate.News.Post do
   def changeset(post, attrs) do
     post
     |> cast(attrs, [:title, :slug, :rubric, :summary, :body, :image_alt])
+    |> Text.clean_text(:title, required: true, max: 200)
+    |> Text.clean_text(:slug, max: 200)
+    |> Text.clean_text(:image_alt, max: 200)
+    |> Text.clean_text(:summary, max: 1000, multiline: true)
+    |> Text.clean_text(:body, max: 20_000, multiline: true, blank: "")
     |> update_change(:slug, &slugify/1)
     |> put_slug()
     |> validate_required([:title, :slug, :rubric])
     |> validate_inclusion(:rubric, @rubrics)
-    |> validate_length(:image_alt, max: 200)
     |> validate_format(:slug, ~r/^[a-z0-9]+(-[a-z0-9]+)*$/)
     |> unique_constraint(:slug)
   end

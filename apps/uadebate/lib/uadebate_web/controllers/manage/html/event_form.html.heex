@@ -27,7 +27,7 @@
   </div>
   <div class="f-block">
     <label class="q" for="event_title">{gettext("Title")} <span class="req">*</span></label>
-    <input type="text" id="event_title" name="event[title]" value={@form[:title].value} />
+    <input type="text" id="event_title" name="event[title]" value={@form[:title].value} maxlength="200" />
     <.errors form={@form} field={:title} />
   </div>
   <div class="f-block">
@@ -60,11 +60,13 @@
     <div class="half">
       <div>
         <label class="q" for="event_city">{gettext("City")}</label>
-        <input type="text" id="event_city" name="event[city]" value={@form[:city].value} />
+        <input type="text" id="event_city" name="event[city]" value={@form[:city].value} maxlength="80" />
+        <.errors form={@form} field={:city} />
       </div>
       <div>
         <label class="q" for="event_format">{gettext("Format")}</label>
-        <input type="text" id="event_format" name="event[format]" value={@form[:format].value} />
+        <input type="text" id="event_format" name="event[format]" value={@form[:format].value} maxlength="80" />
+        <.errors form={@form} field={:format} />
       </div>
     </div>
   </div>
@@ -87,6 +89,7 @@
         id="event_language_other"
         name="event[language_other]"
         value={@form[:language_other].value}
+        maxlength="60"
         placeholder={gettext("e.g. Polish")}
       />
     </div>
@@ -95,13 +98,14 @@
   </div>
   <div class="f-block">
     <label class="q" for="event_link">{gettext("Link")}</label>
-    <input type="url" id="event_link" name="event[link]" value={@form[:link].value} />
+    <input type="url" id="event_link" name="event[link]" value={@form[:link].value} maxlength="255" />
     <div class="hint">{gettext("Registration or the tournament's page, https://...")}</div>
     <.errors form={@form} field={:link} />
   </div>
   <div class="f-block">
     <label class="q" for="event_details">{gettext("Details")}</label>
-    <textarea id="event_details" name="event[details]" style="min-height:90px">{@form[:details].value}</textarea>
+    <textarea id="event_details" name="event[details]" style="min-height:90px" maxlength="5000">{@form[:details].value}</textarea>
+    <.errors form={@form} field={:details} />
   </div>
   <div class="f-block">
     <label class="q">{gettext("Visibility")}</label>
