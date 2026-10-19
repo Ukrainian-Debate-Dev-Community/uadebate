@@ -74,15 +74,29 @@ example `.uadebate.com`) on cab the sign-in is shared.
 
 ## Branches and releases
 
-- `nightly` is the default branch and the only target for pull requests;
-  CI (`test`, `lint`, `guard`, `docker`) must pass. Every night a workflow
-  moves the cab pin to opendebate-cab's latest nightly and opens a pull
-  request into `nightly` when it changed.
-- `master` moves only on a release: `make release VERSION=vX.Y.Z` from a
-  clean `nightly` whose CI is green fast-forwards `master`, tags the
-  commit and pushes both. The tag publishes the image
+- `nightly` is the default branch and the only target for pull requests
+  (squash-merged); CI (`test`, `lint`, `guard`, `docker`) must pass.
+  Every night a workflow moves the cab pin to opendebate-cab's latest
+  release tag and opens a pull request into `nightly` when it changed.
+- `main` moves only on a release, by fast-forward to the release commit.
+- Versions are the git tags `vX.Y.Z`. A release, from a clean `nightly`
+  equal to `origin/nightly` whose CI is green:
+
+  ```sh
+  make release BUMP=patch|minor|major   # or VERSION=X.Y.Z
+  make release BUMP=patch DRY_RUN=1     # preview the version and notes
+  ```
+
+  It shows the next version and the release notes (from the squash-merged
+  pull request titles since the last tag) and asks you to type
+  `uadebate:vX.Y.Z`. Then it writes the version into the `mix.exs` files,
+  prepends the notes to `CHANGELOG.md`, commits
+  `chore(release): uadebate vX.Y.Z` on `nightly` and pushes it, waits for
+  CI on that commit, fast-forwards `main` to it, pushes the annotated tag
+  and publishes the GitHub release. If a step fails after the commit,
+  `make release RESUME=1` finishes it. The tag publishes the image
   `ghcr.io/ukrainian-debate-dev-community/uadebate:vX.Y.Z` (and
-  `:sha-<commit>`) with a GitHub release; the server deploys it.
+  `:sha-<commit>`); the server pins and deploys it.
 - `make dev:image` builds the image locally (Docker needed).
 
 The image runs the `full` release (cab on 4000, uadebate.com on 4001) and
