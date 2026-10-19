@@ -52,6 +52,12 @@ if config_env() != :test do
     base_url: System.get_env("ENGINE_URL", "http://localhost:3100"),
     jwt_secret: engine_secret
 
+  # Cloudflare Turnstile on cab's public forms: on only when both keys are
+  # set; development may use Cloudflare's test keys (see CabWeb.Turnstile)
+  config :cab, :turnstile,
+    site_key: System.get_env("TURNSTILE_SITE_KEY"),
+    secret_key: System.get_env("TURNSTILE_SECRET_KEY")
+
   if legal_dir = System.get_env("LEGAL_DIR") do
     config :cab, :legal_dir, legal_dir
   end
@@ -107,6 +113,10 @@ if config_env() == :prod do
     signed_in: {per_minute.("RATE_LIMIT_SIGNED_IN", "60"), 20},
     anonymous: {per_minute.("RATE_LIMIT_ANONYMOUS", "20"), 20},
     trust_cf_ip: true
+
+  # cab's public forms (guest registration, join requests): the form rate
+  # limit is on unless FORM_RATE_LIMIT=false
+  config :cab, CabWeb.BotGuard, rate_limit: System.get_env("FORM_RATE_LIMIT", "true") == "true"
 
   database_url =
     System.get_env("DATABASE_URL") ||
