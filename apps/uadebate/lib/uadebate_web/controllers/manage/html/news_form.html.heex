@@ -28,12 +28,12 @@
   </div>
   <div class="f-block">
     <label class="q" for="post_title">{gettext("Title")} <span class="req">*</span></label>
-    <input type="text" id="post_title" name="post[title]" value={@form[:title].value} />
+    <input type="text" id="post_title" name="post[title]" value={@form[:title].value} maxlength="200" />
     <.errors form={@form} field={:title} />
   </div>
   <div class="f-block">
     <label class="q" for="post_slug">{gettext("Address")}</label>
-    <input type="text" id="post_slug" name="post[slug]" value={@form[:slug].value} />
+    <input type="text" id="post_slug" name="post[slug]" value={@form[:slug].value} maxlength="200" />
     <div class="hint">{gettext("The end of the link, /news/... Left empty, it is made from the title.")}</div>
     <.errors form={@form} field={:slug} />
   </div>
@@ -70,7 +70,7 @@
     </div>
     <.errors form={@form} field={:image} />
     <label class="q ua-q-gap" for="post_image_alt">{gettext("Image description")}</label>
-    <input type="text" id="post_image_alt" name="post[image_alt]" value={@form[:image_alt].value} />
+    <input type="text" id="post_image_alt" name="post[image_alt]" value={@form[:image_alt].value} maxlength="200" />
     <div class="hint">
       {gettext("What the image shows, for people who cannot see it.")}
     </div>
@@ -78,12 +78,14 @@
   </div>
   <div class="f-block">
     <label class="q" for="post_summary">{gettext("Summary")}</label>
-    <textarea id="post_summary" name="post[summary]" style="min-height:70px">{@form[:summary].value}</textarea>
+    <textarea id="post_summary" name="post[summary]" style="min-height:70px" maxlength="1000">{@form[:summary].value}</textarea>
+    <.errors form={@form} field={:summary} />
     <div class="hint">{gettext("One or two sentences shown above the article.")}</div>
   </div>
   <div class="f-block">
     <label class="q" for="post_body">{gettext("Text")}</label>
-    <textarea id="post_body" name="post[body]">{@form[:body].value}</textarea>
+    <textarea id="post_body" name="post[body]" maxlength="20000">{@form[:body].value}</textarea>
+    <.errors form={@form} field={:body} />
     <div class="hint">
       {gettext("Markdown: ## for a heading, **bold**, [a link](https://...), > for a quote.")}
     </div>

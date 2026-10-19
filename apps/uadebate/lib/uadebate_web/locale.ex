@@ -30,6 +30,8 @@ defmodule UadebateWeb.Locale do
         "en"
 
     Gettext.put_locale(UadebateWeb.Gettext, locale)
+    # cab's messages (Cab.Text form errors) in the same language
+    Gettext.put_locale(CabWeb.Gettext, locale)
 
     conn
     |> assign(:locale, locale)
