@@ -158,7 +158,7 @@ dev\:bump-cab: FORCE
 	@ref="$(REF)"; [ -n "$$ref" ] || ref=$$(git -C cab tag -l 'v*' | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$$' | sort -V | tail -1); \
 	test -n "$$ref" || { echo "opendebate-cab has no release tag yet: make dev:bump-cab REF=origin/nightly"; exit 1; }; \
 	git -C cab checkout --quiet "$$ref" && echo "cab at $$ref"
-	git submodule update --init --recursive cab
+	git -C cab submodule update --init --recursive
 	git -C cab log --oneline -1
 
 # Build the release image locally (needs docker running)
