@@ -24,4 +24,4 @@ msgstr "Заповніть це поле."
 #: lib/uadebate/text.ex
 #, elixir-autogen, elixir-format
 msgid "Use plain text without control characters."
-msgstr "Використовуйте звичайний текст без керувальних символів."
+msgstr "Використовуйте звичайний текст без спеціальних знаків."
