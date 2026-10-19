@@ -1,12 +1,13 @@
 name: nightly
 
-# Every night: move the cab pin to opendebate-cab's latest nightly (it
-# brings cab's own engine pin along). When it changed, the move lands on
-# the cab/bump branch with a pull request into nightly; CI runs on it,
-# and a maintainer merges it like any other.
+# Every night: move the cab pin to opendebate-cab's latest release tag
+# vX.Y.Z (it brings cab's own engine pin along), so the pin moves release
+# by release. When it changed, the move lands on the cab/bump branch with
+# a pull request into nightly; CI runs on it, and a maintainer merges it
+# like any other. 03:00, an hour after cab's own engine bump.
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -27,17 +28,23 @@ jobs:
         with:
           ref: nightly
           fetch-depth: 0
-      - name: Move the cab pin to its latest nightly
+      - name: Move the cab pin to its latest release
         id: bump
         run: |
           git submodule set-url cab https://github.com/Ukrainian-Debate-Dev-Community/opendebate-cab.git
           git submodule update --init cab
           before=$(git -C cab rev-parse HEAD)
-          git -C cab fetch origin nightly
-          git -C cab checkout origin/nightly
+          git -C cab fetch --tags origin
+          tag=$(git -C cab tag -l 'v*' | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -1 || true)
           git checkout -- .gitmodules
+          if [ -z "$tag" ]; then
+            echo "opendebate-cab has no release yet"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git -C cab checkout "$tag"
           after=$(git -C cab rev-parse HEAD)
-          echo "short=$(git -C cab rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+          echo "short=$tag" >> "$GITHUB_OUTPUT"
           if [ "$before" = "$after" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
@@ -55,7 +62,7 @@ jobs:
           if [ -z "$(gh pr list --head cab/bump --base nightly --state open --json number -q '.[].number')" ]; then
             gh pr create --head cab/bump --base nightly \
               --title "chore: cab at ${{ steps.bump.outputs.short }}" \
-              --body "opendebate-cab's latest nightly. Check config/runtime.exs against cab/config/runtime.exs; merge when CI is green."
+              --body "opendebate-cab's latest release. Check config/runtime.exs against cab/config/runtime.exs; merge when CI is green."
           else
             gh pr edit cab/bump --title "chore: cab at ${{ steps.bump.outputs.short }}"
           fi

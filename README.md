@@ -34,19 +34,31 @@ from the server checkout next to this repo (`uadebate-server/legal`, or
 
 ```sh
 git submodule update --init --recursive
-make setup   # cab and its engine, the engine's packages, Elixir deps, databases
-make up      # engine on :3100, cab on :4000, uadebate.com on :4001
-make test    # dfu's and uadebate's tests (cab's run in opendebate-cab)
-make test-e2e    # cab's session walkthrough against the running stack
-make test-all
-make test-phone DEV_USER=<a cab username>  # uadebate's pages as an iPhone 15
-make fresh DEV_USER=<your cab username>    # wipe the databases, load demo data
-make sync-cab    # move the cab pin to opendebate-cab's latest nightly
+make setup        # cab and its engine, the engine's packages, Elixir deps, databases
+make dev:up       # engine on :3100, cab on :4000, uadebate.com on :4001 (make dev does the same)
+make test         # dfu's and uadebate's tests (cab's run in opendebate-cab)
+make test-all     # everything that runs without the stack
 ```
 
+The standard targets (`setup build test test-all lint fmt clean`) are
+local and never need the running stack. Targets named `dev:<x>` work on
+the local stack:
+
+| Command | Does |
+|---|---|
+| `make dev:up` / `make dev:down` / `make dev:restart` | start, stop, restart the engine, cab and uadebate.com |
+| `make dev:status` / `make dev:logs` | what is running / follow the logs in `.run/` |
+| `make dev:fresh DEV_USER=<your cab username>` | wipe the databases, load demo data |
+| `make dev:e2e` | cab's session walkthrough against the running stack |
+| `make dev:phone DEV_USER=<a cab username>` | uadebate's pages as an iPhone 15 |
+| `make dev:backfill` | record lifecycle facts on older cab session rows |
+| `make dev:bump-cab` | move the cab pin to opendebate-cab's latest release (`REF=<ref>` for another) |
+| `make dev:image` | build the release image locally (Docker needed) |
+
 The dev stack reads `.env` at the repo root (OAuth keys, engine
-secret). The engine reads `cab/engine/.env`; without one `make up` starts
-it with development settings and the root `.env`'s `ENGINE_JWT_SECRET`.
+secret). The engine reads `cab/engine/.env`; without one `make dev:up`
+starts it with development settings and the root `.env`'s
+`ENGINE_JWT_SECRET`.
 
 ## uadebate.com
 
@@ -62,16 +74,30 @@ example `.uadebate.com`) on cab the sign-in is shared.
 
 ## Branches and releases
 
-- `nightly` is the default branch and the only target for pull requests;
-  CI (`test`, `lint`, `guard`, `docker`) must pass. Every night a workflow
-  moves the cab pin to opendebate-cab's latest nightly and opens a pull
-  request into `nightly` when it changed.
-- `master` moves only on a release: `make release VERSION=vX.Y.Z` from a
-  clean `nightly` whose CI is green fast-forwards `master`, tags the
-  commit and pushes both. The tag publishes the image
+- `nightly` is the default branch and the only target for pull requests
+  (squash-merged); CI (`test`, `lint`, `guard`, `docker`) must pass.
+  Every night a workflow moves the cab pin to opendebate-cab's latest
+  release tag and opens a pull request into `nightly` when it changed.
+- `main` moves only on a release, by fast-forward to the release commit.
+- Versions are the git tags `vX.Y.Z`. A release, from a clean `nightly`
+  equal to `origin/nightly` whose CI is green:
+
+  ```sh
+  make release BUMP=patch|minor|major   # or VERSION=X.Y.Z
+  make release BUMP=patch DRY_RUN=1     # preview the version and notes
+  ```
+
+  It shows the next version and the release notes (from the squash-merged
+  pull request titles since the last tag) and asks you to type
+  `uadebate:vX.Y.Z`. Then it writes the version into the `mix.exs` files,
+  prepends the notes to `CHANGELOG.md`, commits
+  `chore(release): uadebate vX.Y.Z` on `nightly` and pushes it, waits for
+  CI on that commit, fast-forwards `main` to it, pushes the annotated tag
+  and publishes the GitHub release. If a step fails after the commit,
+  `make release RESUME=1` finishes it. The tag publishes the image
   `ghcr.io/ukrainian-debate-dev-community/uadebate:vX.Y.Z` (and
-  `:sha-<commit>`) with a GitHub release; the server deploys it.
-- `make image` builds the image locally (Docker needed).
+  `:sha-<commit>`); the server pins and deploys it.
+- `make dev:image` builds the image locally (Docker needed).
 
 The image runs the `full` release (cab on 4000, uadebate.com on 4001) and
 answers `GET /healthz` on both ports. Before starting a new version run the
