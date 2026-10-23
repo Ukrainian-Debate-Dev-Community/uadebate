@@ -10,6 +10,11 @@ import Config
 # uadebate changes is overridden below and in this folder's env files.
 import_config "../cab/config/config.exs"
 
+# mdex's precompiled NIF from its Cloudflare mirror: GitHub's release
+# redirects now carry more headers than the downloader's :httpc accepts
+# (header_too_long). cab's config carries it from its next release on.
+config :mdex_native, artifact_source: :cloudflare
+
 # cab's asset builders find phoenix, phoenix_html and phoenix_live_view
 # in the deps folder: here it is this umbrella's, not the submodule's
 node_path = %{"NODE_PATH" => [Path.expand("../deps", __DIR__), Mix.Project.build_path()]}
