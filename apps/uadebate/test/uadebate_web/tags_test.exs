@@ -44,11 +44,15 @@ defmodule UadebateWeb.TagsTest do
   test "they do not exist for anyone else", %{conn: conn} do
     {:ok, tag} = Tags.create(%{"name" => "Secret", "color" => "blue"})
 
+    # signed out: to cab's sign-in for a page, nothing for a change
+    assert conn |> get(~p"/manage/tags") |> redirected_to(302) =~ "/signin?return_to="
+
     for signed <- [conn, cab_sign_in(conn, cab_user())] do
-      assert_error_sent 404, fn -> get(signed, ~p"/manage/tags") end
       assert_error_sent 404, fn -> post(signed, ~p"/manage/tags", %{"tag" => %{"name" => "x"}}) end
       assert_error_sent 404, fn -> delete(signed, ~p"/manage/tags/#{tag.id}") end
     end
+
+    assert_error_sent 404, fn -> conn |> cab_sign_in(cab_user()) |> get(~p"/manage/tags") end
 
     assert [_] = Tags.list()
   end

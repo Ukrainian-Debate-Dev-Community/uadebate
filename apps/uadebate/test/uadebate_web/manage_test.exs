@@ -9,16 +9,29 @@ defmodule UadebateWeb.ManageTest do
     user
   end
 
-  test "/manage does not exist for anyone without the role", %{conn: conn} do
-    {404, _headers, page} = assert_error_sent(404, fn -> get(conn, ~p"/manage") end)
+  test "signed out, /manage sends to cab's sign-in and back", %{conn: conn} do
+    to = conn |> get(~p"/manage/news?page=2") |> redirected_to(302)
+    cab = Application.fetch_env!(:uadebate, :cab_url)
+    assert String.starts_with?(to, cab <> "/signin?return_to=")
+    back = to |> URI.parse() |> Map.fetch!(:query) |> URI.decode_query() |> Map.fetch!("return_to")
+    assert back == UadebateWeb.Endpoint.url() <> "/manage/news?page=2"
+
+    # a form sent without a session is simply not there
+    assert_error_sent 404, fn -> post(conn, ~p"/manage/calendar/public", %{}) end
+  end
+
+  test "/manage does not exist for anyone signed in without the role", %{conn: conn} do
+    unknown = conn |> get("/no-such-page") |> html_response(404)
+    assert unknown =~ "Page not found"
+    assert unknown =~ ~s(class="ua-error")
+
+    {404, _headers, page} =
+      assert_error_sent(404, fn -> conn |> cab_sign_in(cab_user()) |> get(~p"/manage") end)
+
     assert page =~ "Page not found"
     assert page =~ ~s(class="ua-error")
     assert page =~ "UAdebate"
     refute page =~ "manage"
-    unknown = conn |> get("/no-such-page") |> html_response(404)
-    assert unknown =~ "Page not found"
-    assert unknown =~ ~s(class="ua-error")
-    assert_error_sent 404, fn -> conn |> cab_sign_in(cab_user()) |> get(~p"/manage") end
 
     {_status, headers, _body} =
       assert_error_sent 404, fn -> conn |> cab_sign_in(cab_user()) |> get(~p"/manage/news") end
@@ -26,9 +39,9 @@ defmodule UadebateWeb.ManageTest do
     refute Enum.any?(headers, fn {k, _} -> k == "set-cookie" end)
   end
 
-  test "a tampered cab cookie is no one", %{conn: conn} do
+  test "a tampered cab cookie is no one: off to the sign-in", %{conn: conn} do
     conn = Plug.Test.put_req_cookie(conn, CabWeb.Session.cookie_key(), "forged")
-    assert_error_sent 404, fn -> get(conn, ~p"/manage") end
+    assert conn |> get(~p"/manage") |> redirected_to(302) =~ "/signin?return_to="
   end
 
   test "content managers and cab admins get the ribbon", %{conn: conn} do

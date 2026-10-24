@@ -114,6 +114,11 @@ if config_env() == :prod do
     anonymous: {per_minute.("RATE_LIMIT_ANONYMOUS", "20"), 20},
     trust_cf_ip: true
 
+  # a phone typed without its +code is read in this country (ISO code)
+  if country = System.get_env("DEFAULT_PHONE_COUNTRY") do
+    config :cab, :default_phone_country, String.upcase(country)
+  end
+
   # cab's public forms (guest registration, join requests): the form rate
   # limit is on unless FORM_RATE_LIMIT=false
   config :cab, CabWeb.BotGuard, rate_limit: System.get_env("FORM_RATE_LIMIT", "true") == "true"
@@ -175,6 +180,21 @@ if config_env() == :prod do
       retries: 1
   else
     IO.warn("SMTP_HOST is not set: e-mails are kept in memory and never sent", [])
+  end
+
+  # Sibling sites a sign-in returns to: RETURN_HOSTS="example.org,www.example.org"
+  # (uadebate.com's /manage sends signed-out editors to cab's sign-in)
+  if hosts = System.get_env("RETURN_HOSTS") do
+    config :cab,
+           :return_hosts,
+           hosts |> String.split(",", trim: true) |> Enum.map(&String.trim/1)
+  end
+
+  # Short links to sibling sites: SHORT_LINK_HOSTS="example.org,www.example.org"
+  if hosts = System.get_env("SHORT_LINK_HOSTS") do
+    config :cab,
+           :short_link_hosts,
+           hosts |> String.split(",", trim: true) |> Enum.map(&String.trim/1)
   end
 
   # Share the sign-in with sibling sites: SESSION_COOKIE_DOMAIN=".example.org"
