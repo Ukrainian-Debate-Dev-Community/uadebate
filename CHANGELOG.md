@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.5.0 - 2026-10-24
+
+2 features, 2 fixes; breaking: 0
+
+### Features
+
+- uadebate: the public requests events, managers decide (#31) by @merv1n34k
+- uadebate: signed-out /manage goes to cab's sign-in and back (#30) by @merv1n34k
+
+### Fixes
+
+- ci: fetch tailwind with curl in the image build (#29) by @merv1n34k
+- deps: plug_crypto 2.2.1 (CVE-2026-105963) (#28) by @merv1n34k
+
+### Contributors
+
+- @merv1n34k: 4 commits
+
 ## v0.4.3 - 2026-10-19
 
 1 fix, 2 chore; breaking: 0
