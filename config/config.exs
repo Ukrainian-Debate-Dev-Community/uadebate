@@ -40,6 +40,10 @@ config :uadebate, UadebateWeb.Endpoint,
 
 config :uadebate, :cab_url, "http://localhost:4000"
 
+# where the public's event requests are announced (EVENT_REQUESTS_EMAIL in
+# production); none here: requests are kept, nobody is e-mailed
+config :uadebate, :event_requests_email, nil
+
 # cab's club logos in development: beside uadebate's own uploads, in the
 # ignored uploads folder (cab's test.exs keeps its tmp folder; prod sets
 # CAB_UPLOADS_DIR in runtime.exs)

@@ -3,8 +3,13 @@
   title={gettext("Tournaments and events")}
   lead={gettext("Tournaments first, plus trainings and club events across Ukraine.")}
 >
-  <:actions :if={@calendar_public}>
-    <a class="ua-btn ua-btn--gold" href={~p"/calendar.ics"}>{gettext("Subscribe to the calendar")}</a>
+  <:actions>
+    <a class="ua-btn ua-btn--gold" href={~p"/calendar/request"} id="request-event">
+      {gettext("Request an event")}
+    </a>
+    <a :if={@calendar_public} class="ua-btn ua-btn--line" href={~p"/calendar.ics"}>
+      {gettext("Subscribe to the calendar")}
+    </a>
   </:actions>
 </.page_head>
 

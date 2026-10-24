@@ -21,6 +21,10 @@
   method={if @event, do: "put", else: "post"}
   class="ua-card form"
 >
+  <input :if={@request} type="hidden" name="request_id" value={@request.id} />
+  <div :if={@request} class="ua-flash" id="from-request">
+    {gettext("From a request by %{email}: check it and save to accept the request.", email: @request.email)}
+  </div>
   <div class="f-head">
     <h3>{if @event, do: @event.title, else: gettext("New event")}</h3>
     <p>{gettext("Public events appear on the calendar, the home page and the iCal feed.")}</p>

@@ -35,3 +35,27 @@
   })
   mark()
 })()
+
+// Links that post (cab's form editor in /manage: up, down, remove), as
+// phoenix_html marks them: data-method, data-to and the CSRF token in
+// data-csrf. A click sends a small form instead of following the link.
+document.addEventListener("click", e => {
+  const link = e.target.closest("a[data-method]")
+  if (!link || e.defaultPrevented) return
+  e.preventDefault()
+  const form = document.createElement("form")
+  form.method = "post"
+  form.action = link.dataset.to || link.getAttribute("href")
+  const add = (name, value) => {
+    const input = document.createElement("input")
+    input.type = "hidden"
+    input.name = name
+    input.value = value
+    form.appendChild(input)
+  }
+  if (link.dataset.csrf) add("_csrf_token", link.dataset.csrf)
+  if (link.dataset.method !== "post") add("_method", link.dataset.method)
+  form.style.display = "none"
+  document.body.appendChild(form)
+  form.submit()
+})
