@@ -33,6 +33,19 @@ COPY apps apps
 COPY config/runtime.exs config/
 RUN mix compile
 
+# Tailwind's binary, fetched with curl: the tailwind package's own
+# download (Erlang httpc) refuses GitHub's release redirects
+# (header_too_long). It lands where the package looks for it, so
+# tailwind.install finds it in place; the version is cab's config.exs's.
+ARG TARGETARCH
+RUN TW=$(sed -n '/^config :tailwind,/,/^$/s/.*version: "\([0-9.]*\)".*/\1/p' cab/config/config.exs) \
+ && case "${TARGETARCH:-amd64}" in arm64) T=linux-arm64 ;; *) T=linux-x64 ;; esac \
+ && test -n "$TW" \
+ && mkdir -p _build \
+ && curl -fsSL --retry 3 -o "_build/tailwind-$T-$TW" \
+      "https://github.com/tailwindlabs/tailwindcss/releases/download/v$TW/tailwindcss-$T" \
+ && chmod +x "_build/tailwind-$T-$TW"
+
 # cab's assets need the compiled app (colocated hooks), then digesting.
 # Built from this umbrella: cab's own assets.deploy alias would use the
 # submodule's build and deps folders. phx.digest runs in one app, as from
