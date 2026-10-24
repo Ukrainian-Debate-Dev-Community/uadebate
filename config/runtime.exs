@@ -232,6 +232,11 @@ if config_env() == :prod do
 
   config :uadebate, :cab_url, System.get_env("CAB_URL") || "https://#{host}"
 
+  # where the public's event requests are announced: EVENT_REQUESTS_EMAIL
+  if address = System.get_env("EVENT_REQUESTS_EMAIL") do
+    config :uadebate, :event_requests_email, address
+  end
+
   # news cover images: a persistent volume, kept in the backups
   config :uadebate,
          :uploads_dir,

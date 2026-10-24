@@ -55,6 +55,11 @@ msgstr ""
 msgid "A debate community since 2011"
 msgstr ""
 
+#: lib/uadebate_web/emails.ex
+#, elixir-autogen, elixir-format
+msgid "A new request for an event in the calendar.\n\n%{answers}\n\nAccept or decline it: %{url}"
+msgstr ""
+
 #: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
 msgid "APF"
@@ -76,9 +81,19 @@ msgstr ""
 msgid "About the federation"
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Accept: add the event"
+msgstr ""
+
 #: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
 msgid "Active clubs"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Add the field"
 msgstr ""
 
 #: lib/uadebate_web/controllers/manage/html/news_form.html.heex
@@ -182,6 +197,11 @@ msgstr ""
 msgid "Back to draft: only content managers see it."
 msgstr ""
 
+#: lib/uadebate_web/controllers/event_request_html/sent.html.heex
+#, elixir-autogen, elixir-format
+msgid "Back to the calendar"
+msgstr ""
+
 #: lib/uadebate_web/controllers/error_html.ex
 #, elixir-autogen, elixir-format
 msgid "Back to the home page"
@@ -226,6 +246,8 @@ msgstr ""
 #: lib/uadebate_web/components/site.ex
 #: lib/uadebate_web/controllers/calendar_controller.ex
 #: lib/uadebate_web/controllers/calendar_html/index.html.heex
+#: lib/uadebate_web/controllers/event_request_html/new.html.heex
+#: lib/uadebate_web/controllers/event_request_html/sent.html.heex
 #: lib/uadebate_web/controllers/manage/calendar_controller.ex
 #: lib/uadebate_web/controllers/manage/html/calendar.html.heex
 #: lib/uadebate_web/controllers/manage/html/dash.html.heex
@@ -238,6 +260,11 @@ msgstr ""
 #: lib/uadebate_web/controllers/manage/html/calendar.html.heex
 #, elixir-autogen, elixir-format
 msgid "Calendar visible to the public"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Cancel"
 msgstr ""
 
 #: lib/uadebate_web/components/site.ex
@@ -255,6 +282,7 @@ msgstr ""
 msgid "Cities"
 msgstr ""
 
+#: lib/uadebate/event_requests.ex
 #: lib/uadebate_web/controllers/club_html/index.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
@@ -326,6 +354,11 @@ msgstr ""
 msgid "Community"
 msgstr ""
 
+#: lib/uadebate_web/controllers/event_request_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Confirm you are not a robot."
+msgstr ""
+
 #: lib/uadebate_web/components/site.ex
 #: lib/uadebate_web/controllers/club_html/show.html.heex
 #: lib/uadebate_web/controllers/page_html/about.html.heex
@@ -351,6 +384,11 @@ msgstr ""
 #: lib/uadebate_web/cab_operator.ex
 #, elixir-autogen, elixir-format
 msgid "DFU"
+msgstr ""
+
+#: lib/uadebate/event_requests.ex
+#, elixir-autogen, elixir-format
+msgid "Dates"
 msgstr ""
 
 #: lib/uadebate_web/cab_operator.ex
@@ -388,12 +426,28 @@ msgctxt "in a date"
 msgid "December"
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Decided"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Decision"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Decline"
+msgstr ""
+
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #: lib/uadebate_web/controllers/manage/html/tags.html.heex
 #, elixir-autogen, elixir-format
 msgid "Delete"
 msgstr ""
 
+#: lib/uadebate/event_requests.ex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
@@ -464,6 +518,21 @@ msgstr ""
 msgid "Event deleted."
 msgstr ""
 
+#: lib/uadebate/event_requests.ex
+#, elixir-autogen, elixir-format
+msgid "Event name"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Event requests from the public"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/event_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Event saved and the request accepted. The requester got an e-mail."
+msgstr ""
+
 #: lib/uadebate_web/controllers/manage/event_controller.ex
 #, elixir-autogen, elixir-format
 msgid "Event saved."
@@ -489,6 +558,21 @@ msgstr ""
 #: lib/uadebate_web/controllers/news_html/index.html.heex
 #, elixir-autogen, elixir-format
 msgid "Federation news"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/request_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Field added."
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/request_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Field removed."
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/request_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Field saved."
 msgstr ""
 
 #: lib/uadebate_web/controllers/page_html/home.html.heex
@@ -526,6 +610,17 @@ msgstr ""
 msgid "First tournament, the Federation Cup in Vinnytsia"
 msgstr ""
 
+#: lib/uadebate/event_requests.ex
+#, elixir-autogen, elixir-format
+msgid "For example 14-16 November 2026"
+msgstr ""
+
+#: lib/uadebate/event_requests.ex
+#, elixir-autogen, elixir-format
+msgid "For example BP, APF, WSDC"
+msgstr ""
+
+#: lib/uadebate/event_requests.ex
 #: lib/uadebate_web/controllers/club_html/index.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
@@ -535,6 +630,11 @@ msgstr ""
 #: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
 msgid "Fri"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/event_form.html.heex
+#, elixir-autogen, elixir-format
+msgid "From a request by %{email}: check it and save to accept the request."
 msgstr ""
 
 #: lib/uadebate_web/controllers/page_html/about.html.heex
@@ -803,6 +903,11 @@ msgstr ""
 msgid "New event"
 msgstr ""
 
+#: lib/uadebate_web/emails.ex
+#, elixir-autogen, elixir-format
+msgid "New event request"
+msgstr ""
+
 #: lib/uadebate_web/controllers/manage/html/tags.html.heex
 #, elixir-autogen, elixir-format
 msgid "New tag"
@@ -860,6 +965,11 @@ msgstr ""
 msgid "No news yet. Write the first one."
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "No pending requests."
+msgstr ""
+
 #: lib/uadebate_web/controllers/manage/html/tags.html.heex
 #, elixir-autogen, elixir-format
 msgid "No tags yet."
@@ -868,6 +978,11 @@ msgstr ""
 #: lib/uadebate_web/controllers/manage/html/people.html.heex
 #, elixir-autogen, elixir-format
 msgid "Nobody holds the role yet."
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Nothing decided yet."
 msgstr ""
 
 #: lib/uadebate_web/controllers/calendar_html.ex
@@ -960,6 +1075,11 @@ msgstr ""
 msgid "Open in cab"
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Open the page"
+msgstr ""
+
 #: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
 msgid "Open to all"
@@ -1009,6 +1129,11 @@ msgstr ""
 #: lib/uadebate_web/controllers/error_html.ex
 #, elixir-autogen, elixir-format
 msgid "Page not found"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Pending"
 msgstr ""
 
 #: lib/uadebate_web/components/site.ex
@@ -1092,6 +1217,21 @@ msgstr ""
 msgid "Purple"
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Reason"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Reason (optional, sent to the requester)"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Received %{date} from %{email}"
+msgstr ""
+
 #: lib/uadebate_web/controllers/manage/html.ex
 #, elixir-autogen, elixir-format
 msgid "Red"
@@ -1105,6 +1245,35 @@ msgstr ""
 #: lib/uadebate_web/controllers/manage/html/news_form.html.heex
 #, elixir-autogen, elixir-format
 msgid "Remove the image"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Request"
+msgstr ""
+
+#: lib/uadebate_web/controllers/calendar_html/index.html.heex
+#: lib/uadebate_web/controllers/event_request_controller.ex
+#: lib/uadebate_web/controllers/event_request_html/new.html.heex
+#, elixir-autogen, elixir-format
+msgid "Request an event"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/request_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Request declined. The requester got an e-mail."
+msgstr ""
+
+#: lib/uadebate_web/controllers/event_request_html/sent.html.heex
+#, elixir-autogen, elixir-format
+msgid "Request sent"
+msgstr ""
+
+#: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#: lib/uadebate_web/controllers/manage/request_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Requests"
 msgstr ""
 
 #: lib/uadebate_web/components/site.ex
@@ -1145,6 +1314,11 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "Save the field"
+msgstr ""
+
 #: lib/uadebate_web/controllers/manage/html/news_form.html.heex
 #, elixir-autogen, elixir-format
 msgid "Saved as a draft until you publish it."
@@ -1163,6 +1337,11 @@ msgstr ""
 #: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
 msgid "School students"
+msgstr ""
+
+#: lib/uadebate_web/controllers/event_request_html/new.html.heex
+#, elixir-autogen, elixir-format
+msgid "Send the request"
 msgstr ""
 
 #: lib/uadebate_web/components/site.ex
@@ -1271,6 +1450,11 @@ msgstr ""
 msgid "Telegram"
 msgstr ""
 
+#: lib/uadebate_web/controllers/event_request_html/new.html.heex
+#, elixir-autogen, elixir-format
+msgid "Tell us about your tournament or event. We will write to you once it is decided; a copy of your request goes to your e-mail."
+msgstr ""
+
 #: lib/uadebate_web/components/site.ex
 #: lib/uadebate_web/controllers/page_html/about.html.heex
 #, elixir-autogen, elixir-format
@@ -1281,6 +1465,16 @@ msgstr ""
 #: lib/uadebate_web/controllers/manage/html/tags.html.heex
 #, elixir-autogen, elixir-format
 msgid "Text"
+msgstr ""
+
+#: lib/uadebate_web/controllers/event_request_html/sent.html.heex
+#, elixir-autogen, elixir-format
+msgid "Thank you. We sent a copy of your request to %{email}."
+msgstr ""
+
+#: lib/uadebate_web/emails.ex
+#, elixir-autogen, elixir-format
+msgid "Thank you: we received your request for an event in the calendar. We will write to this address once it is decided.\n\nWhat you sent:\n\n%{answers}"
 msgstr ""
 
 #: lib/uadebate_web/controllers/calendar_html/index.html.heex
@@ -1321,6 +1515,11 @@ msgstr ""
 #: lib/uadebate_web/controllers/page_html.ex
 #, elixir-autogen, elixir-format
 msgid "The number of branches grew to 11 regional and 2 city branches of the DFU"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "The request form"
 msgstr ""
 
 #: lib/uadebate_web/controllers/manage/people_controller.ex
@@ -1378,6 +1577,11 @@ msgstr ""
 msgid "This page cannot be shown."
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/request_controller.ex
+#, elixir-autogen, elixir-format
+msgid "This request was already decided."
+msgstr ""
+
 #: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
 msgid "Thu"
@@ -1398,6 +1602,11 @@ msgstr ""
 #: lib/uadebate_web/controllers/manage/html/people.html.heex
 #, elixir-autogen, elixir-format
 msgid "To a person who has signed in to cab at least once."
+msgstr ""
+
+#: lib/uadebate_web/controllers/event_request_controller.ex
+#, elixir-autogen, elixir-format
+msgid "Too many requests from this address. Please try again in %{minutes} minutes."
 msgstr ""
 
 #: lib/uadebate_web/components/site.ex
@@ -1507,6 +1716,11 @@ msgstr ""
 msgid "What the image shows, for people who cannot see it."
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "What the public is asked on the calendar's request page; the e-mail is always asked first."
+msgstr ""
+
 #: lib/uadebate_web/controllers/page_html/about.html.heex
 #, elixir-autogen, elixir-format
 msgid "What we store and why"
@@ -1545,9 +1759,49 @@ msgstr ""
 msgid "You see private events too: only content managers see them."
 msgstr ""
 
+#: lib/uadebate_web/controllers/event_request_html/new.html.heex
+#, elixir-autogen, elixir-format
+msgid "Your event"
+msgstr ""
+
+#: lib/uadebate_web/emails.ex
+#, elixir-autogen, elixir-format
+msgid "Your event request"
+msgstr ""
+
+#: lib/uadebate_web/emails.ex
+#, elixir-autogen, elixir-format
+msgid "Your event request was accepted"
+msgstr ""
+
+#: lib/uadebate_web/emails.ex
+#, elixir-autogen, elixir-format
+msgid "Your event request was declined"
+msgstr ""
+
+#: lib/uadebate_web/emails.ex
+#, elixir-autogen, elixir-format
+msgid "Your request for an event was declined."
+msgstr ""
+
+#: lib/uadebate_web/emails.ex
+#, elixir-autogen, elixir-format
+msgid "Your request for an event was declined.\n\nReason: %{reason}"
+msgstr ""
+
+#: lib/uadebate_web/emails.ex
+#, elixir-autogen, elixir-format
+msgid "Your request was accepted: %{title} is in the calendar.\n\n%{url}"
+msgstr ""
+
 #: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
 msgid "Zaporizhzhia"
+msgstr ""
+
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "accepted"
 msgstr ""
 
 #: lib/uadebate_web/components/site.ex
@@ -1555,9 +1809,19 @@ msgstr ""
 msgid "beta"
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/html/requests.html.heex
+#, elixir-autogen, elixir-format
+msgid "declined"
+msgstr ""
+
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
 msgid "e.g. Polish"
+msgstr ""
+
+#: lib/uadebate/event_requests.ex
+#, elixir-autogen, elixir-format
+msgid "no"
 msgstr ""
 
 #: lib/uadebate_web/controllers/manage/html/people.html.heex
@@ -1568,4 +1832,9 @@ msgstr ""
 #: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
 msgid "tournaments, clubs, growth"
+msgstr ""
+
+#: lib/uadebate/event_requests.ex
+#, elixir-autogen, elixir-format
+msgid "yes"
 msgstr ""

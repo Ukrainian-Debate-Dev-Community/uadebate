@@ -23,6 +23,17 @@ defmodule UadebateWeb.Router do
     plug :put_secure_browser_headers
   end
 
+  # the event request form: the one public page with a session, only
+  # for its CSRF token (the rest of the public site reads nothing)
+  pipeline :public_form do
+    plug :accepts, ["html"]
+    plug UadebateWeb.Locale
+    plug :fetch_session
+    plug :protect_from_forgery
+    plug :put_root_layout, html: {UadebateWeb.Layouts, :root}
+    plug :put_secure_browser_headers
+  end
+
   scope "/", UadebateWeb do
     # the container health check
     get "/healthz", HealthController, :show
@@ -41,6 +52,13 @@ defmodule UadebateWeb.Router do
     get "/calendar", CalendarController, :index
     get "/clubs", ClubController, :index
     get "/clubs/:uuid", ClubController, :show
+  end
+
+  scope "/", UadebateWeb do
+    pipe_through :public_form
+
+    get "/calendar/request", EventRequestController, :new
+    post "/calendar/request", EventRequestController, :create
   end
 
   scope "/manage", UadebateWeb.Manage do
@@ -70,6 +88,13 @@ defmodule UadebateWeb.Router do
     get "/tags/:id/edit", TagController, :edit
     put "/tags/:id", TagController, :update
     delete "/tags/:id", TagController, :delete
+
+    get "/requests", RequestController, :index
+    post "/requests/:id/decline", RequestController, :decline
+    post "/requests/form/fields", RequestController, :add_field
+    post "/requests/form/fields/:field_id", RequestController, :update_field
+    post "/requests/form/fields/:field_id/remove", RequestController, :remove_field
+    post "/requests/form/fields/:field_id/move/:direction", RequestController, :move_field
 
     get "/people", PeopleController, :index
     post "/people", PeopleController, :grant

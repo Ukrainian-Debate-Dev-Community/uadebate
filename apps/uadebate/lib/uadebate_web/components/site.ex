@@ -125,6 +125,7 @@ defmodule UadebateWeb.Site do
       {:dash, ~p"/manage", gettext("Overview")},
       {:news, ~p"/manage/news", gettext("News")},
       {:calendar, ~p"/manage/calendar", gettext("Calendar")},
+      {:requests, ~p"/manage/requests", gettext("Requests")},
       {:tags, ~p"/manage/tags", gettext("Tags")}
     ]
 
