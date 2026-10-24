@@ -32,3 +32,9 @@
   />
   <:submit>{gettext("Send the request")}</:submit>
 </CabWeb.Ui.form_for>
+
+<%!-- cab's contact-field helpers for the form's phone, e-mail and
+     telegram fields: the country picker and spacing, the checks when a
+     field is left (the messages come with the fields) --%>
+<script defer src={cab_url("/assets/js/contact-fields.js")}>
+</script>
