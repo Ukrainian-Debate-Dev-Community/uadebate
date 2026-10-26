@@ -2,7 +2,7 @@
 RELEASE_NAME      = uadebate
 RELEASE_REPO      = Ukrainian-Debate-Dev-Community/uadebate
 RELEASE_CI        = ci.yml
-RELEASE_FILES     = mix.exs apps/dfu/mix.exs apps/uadebate/mix.exs
+RELEASE_FILES     = mix.exs apps/uadebate/mix.exs
 RELEASE_CHANGELOG = CHANGELOG.md
 IMAGE             = ghcr.io/ukrainian-debate-dev-community/uadebate
 RELEASE_ARTIFACT  = the image $(IMAGE):v{version} (release workflow)
@@ -39,7 +39,7 @@ dev:
 build:
 	$(NIX) mix compile --warnings-as-errors
 
-# dfu's and uadebate's tests; cab's own run in opendebate-cab
+# uadebate's tests; cab's own run in opendebate-cab
 test:
 	$(NIX) sh -c 'MIX_ENV=test mix test'
 

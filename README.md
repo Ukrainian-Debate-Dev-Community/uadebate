@@ -5,14 +5,13 @@ umbrella:
 
 - `apps/uadebate`: the public site, uadebate.com (its own database for
   news, events and editors; clubs and accounts read from cab)
-- `apps/dfu`: the NGO cabinet (skeleton)
 - `cab/`: [opendebate-cab](https://github.com/Ukrainian-Debate-Dev-Community/opendebate-cab),
   pinned as a git submodule: `cab/apps/core` (the engine client and the
   shared mailer), `cab/apps/cab` (debate clubs and their sessions) and
   `cab/engine`, the debate engine, pinned in turn by cab
 
-Dependencies point down only: uadebate -> dfu -> cab -> core. dfu and
-uadebate depend on core and cab as path deps into the submodule; cab
+Dependencies point down only: uadebate -> cab -> core.
+uadebate depends on core and cab as path deps into the submodule; cab
 knows nothing above it. uadebate tells cab who runs it
 (`UadebateWeb.CabOperator`, `config :cab, :operator`): the texts, links
 and addresses in cab's footer, on its sign-in and on its account page,
@@ -36,7 +35,7 @@ from the server checkout next to this repo (`uadebate-server/legal`, or
 git submodule update --init --recursive
 make setup        # cab and its engine, the engine's packages, Elixir deps, databases
 make dev:up       # engine on :3100, cab on :4000, uadebate.com on :4001 (make dev does the same)
-make test         # dfu's and uadebate's tests (cab's run in opendebate-cab)
+make test         # uadebate's tests (cab's run in opendebate-cab)
 make test-all     # everything that runs without the stack
 ```
 

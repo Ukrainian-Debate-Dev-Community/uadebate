@@ -1,5 +1,5 @@
 # The uadebate image: the `full` release (cab and core from the cab
-# submodule, dfu, uadebate) in one container. cab listens on 4000,
+# submodule, uadebate) in one container. cab listens on 4000,
 # uadebate.com on 4001. Policy and Terms are not baked
 # in: the server mounts its legal/ folder and points LEGAL_DIR at it.
 
@@ -22,7 +22,6 @@ RUN mix local.hex --force && mix local.rebar --force
 COPY mix.exs mix.lock ./
 COPY cab/apps/core/mix.exs cab/apps/core/mix.exs
 COPY cab/apps/cab/mix.exs cab/apps/cab/mix.exs
-COPY apps/dfu/mix.exs apps/dfu/mix.exs
 COPY apps/uadebate/mix.exs apps/uadebate/mix.exs
 COPY cab/config/config.exs cab/config/prod.exs cab/config/
 COPY config/config.exs config/prod.exs config/

@@ -39,7 +39,6 @@ defmodule Uadebate.MixProject do
     [
       {:core, path: "../../cab/apps/core", env: Mix.env()},
       {:cab, path: "../../cab/apps/cab", env: Mix.env()},
-      {:dfu, in_umbrella: true},
       {:phoenix, "~> 1.8.13"},
       {:phoenix_ecto, "~> 4.5"},
       {:phoenix_html, "~> 4.1"},

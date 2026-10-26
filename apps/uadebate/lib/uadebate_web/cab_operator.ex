@@ -23,7 +23,7 @@ defmodule UadebateWeb.CabOperator do
         org_text:
           gettext("Run by the NGO Debate Federation of Ukraine (ВМГО «Федерація Дебатів України»)."),
         org_label: gettext("DFU"),
-        org_url: "https://dfu.uadebate.com",
+        org_url: "https://uadebate.com/about",
         contact_email: "ngo.dfu@uadebate.com",
         support_email: "support@uadebate.com",
         signin_foot: gettext("Debate Federation of Ukraine") <> " — uadebate.com"
