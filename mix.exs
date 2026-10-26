@@ -1,13 +1,13 @@
 defmodule Uadebate.Umbrella.MixProject do
   use Mix.Project
 
-  # uadebate: the public site and the NGO cabinet on top of cab.
+  # uadebate: the public site on top of cab.
   # Layering (deps point down only):
   #
-  #   engine (Node, cab/engine) <- core <- cab <- dfu <- uadebate
+  #   engine (Node, cab/engine) <- core <- cab <- uadebate
   #
   # core and cab come from the cab submodule (opendebate-cab) as path
-  # deps; this umbrella holds only dfu and uadebate. The `full` release
+  # deps; this umbrella holds only uadebate. The `full` release
   # runs cab (4000) and uadebate.com (4001) in one node.
   def project do
     [
@@ -23,7 +23,7 @@ defmodule Uadebate.Umbrella.MixProject do
   defp releases do
     [
       full: [
-        applications: [core: :permanent, cab: :permanent, dfu: :permanent, uadebate: :permanent]
+        applications: [core: :permanent, cab: :permanent, uadebate: :permanent]
       ]
     ]
   end

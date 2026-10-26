@@ -15,7 +15,7 @@ env:
   OTP_VERSION: "27"
 
 jobs:
-  # dfu's and uadebate's tests; cab's own run in opendebate-cab
+  # uadebate's tests; cab's own run in opendebate-cab
   test:
     runs-on: ubuntu-latest
     services:
