@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.5.1 - 2026-10-26
+
+2 chore; breaking: 0
+
+### Other
+
+- chore(deps): pin cab v0.2.3, a sign-in returns only where it asked (#34) by @merv1n34k
+- chore: remove dfu, the unused NGO cabinet skeleton (#33) by @merv1n34k
+
+### Contributors
+
+- @merv1n34k: 2 commits
+
 ## v0.5.0 - 2026-10-24
 
 2 features, 2 fixes; breaking: 0

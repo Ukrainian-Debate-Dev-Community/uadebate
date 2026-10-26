@@ -12,7 +12,7 @@ defmodule Uadebate.Umbrella.MixProject do
   def project do
     [
       apps_path: "apps",
-      version: "0.5.0",
+      version: "0.5.1",
       start_permanent: Mix.env() == :prod,
       listeners: [Phoenix.CodeReloader],
       deps: [],
