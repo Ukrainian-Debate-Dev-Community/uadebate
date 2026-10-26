@@ -79,6 +79,7 @@ defmodule UadebateWeb.EventPageTest do
     assert_error_sent 404, fn -> get(conn, ~p"/calendar/#{private.id}/ics") end
     assert_error_sent 404, fn -> get(conn, "/calendar/0") end
     assert_error_sent 404, fn -> get(conn, "/calendar/nope") end
+    assert_error_sent 404, fn -> get(conn, "/calendar/99999999999999999999") end
 
     public = event(%{})
     {:ok, _} = Settings.set_calendar_public(false, cab_user(%{is_admin: true}).id)
