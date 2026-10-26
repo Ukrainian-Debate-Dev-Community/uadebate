@@ -55,6 +55,55 @@ defmodule UadebateWeb.CalendarHTML do
     """
   end
 
+  attr :event, :map, required: true
+  slot :tags, doc: "more tags after the kind; /manage adds Private and the private tags"
+
+  # an event's page below its head, public and under /manage alike: the
+  # kind, the details, and when, where and in which language
+  def event_body(assigns) do
+    assigns =
+      assign(assigns,
+        paragraphs: paragraphs(assigns.event.details),
+        language: event_language(assigns.event)
+      )
+
+    ~H"""
+    <div class="ua-tags">
+      <.tag kind={if @event.kind == "tournament", do: "ok", else: "info"}>
+        {kind_label(@event.kind)}
+      </.tag>
+      {render_slot(@tags)}
+    </div>
+    <div class="ua-grid2">
+      <div :if={@paragraphs != []}>
+        <div class="ua-sec">{gettext("Details")}</div>
+        <div class="ua-card ua-pad ua-prose ua-evtext" id="event-details">
+          <p :for={paragraph <- @paragraphs}>{paragraph}</p>
+        </div>
+      </div>
+      <div>
+        <div class="ua-sec">{gettext("When and where")}</div>
+        <div class="ua-card ua-pad ua-dl" id="event-facts">
+          <div><span>{gettext("Dates")}</span>{event_dates(@event)}</div>
+          <div :if={@event.city}><span>{gettext("City")}</span>{@event.city}</div>
+          <div :if={@event.format}><span>{gettext("Format")}</span>{@event.format}</div>
+          <div :if={@language}><span>{gettext("Language")}</span>{@language}</div>
+        </div>
+      </div>
+    </div>
+    """
+  end
+
+  # plain text, never HTML: a blank line starts a new paragraph
+  def paragraphs(nil), do: []
+
+  def paragraphs(text) do
+    text
+    |> String.split(~r/\R\s*\R/u)
+    |> Enum.map(&String.trim/1)
+    |> Enum.reject(&(&1 == ""))
+  end
+
   def link(base, %Period{} = period, kind, tag) do
     query =
       (Period.params(period) ++ [kind: kind, tag: tag && tag.id])

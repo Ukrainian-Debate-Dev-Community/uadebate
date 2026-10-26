@@ -52,6 +52,16 @@ defmodule Uadebate.Events do
       else: []
   end
 
+  # one public event, or nil: private, missing, or the calendar private
+  def get_public(id) do
+    with true <- Settings.calendar_public?(),
+         {id, ""} when id in 1..9_223_372_036_854_775_807 <- Integer.parse(to_string(id)) do
+      Repo.get_by(Event, id: id, visibility: "public")
+    else
+      _ -> nil
+    end
+  end
+
   def get!(id), do: Event |> Repo.get!(id) |> Repo.preload(:tags)
 
   def change(event \\ %Event{}, attrs \\ %{}), do: Event.changeset(event, attrs)

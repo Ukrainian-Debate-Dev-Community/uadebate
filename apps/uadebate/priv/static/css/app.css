@@ -231,7 +231,9 @@ a { color:var(--brand); }
          border-radius:var(--r); padding:10px 14px; margin-bottom:8px; }
 .ua-ev--priv { border-style:dashed; border-color:var(--co); background:var(--surface-2); }
 .ua-ev--past { background:var(--surface-2); }
-.ua-ev--past .ua-date, .ua-ev--past .ua-ev-body, .ua-ev--past > .ua-tag { opacity:.5; filter:grayscale(1); }
+.ua-ev--past .ua-date, .ua-ev--past > .ua-tag { opacity:.5; filter:grayscale(1); }
+/* no filter on the body: it would hold the title's stretched link inside it */
+.ua-ev--past .ua-ev-body { opacity:.5; }
 .ua-ev--today .ua-date { background:var(--brand-fill); color:var(--on-brand); }
 .ua-date { min-width:44px; text-align:center; background:var(--brand-50); color:var(--brand-700); border-radius:8px;
            padding:5px 4px; flex:none; }
@@ -240,6 +242,11 @@ a { color:var(--brand); }
 .ua-ev-body { flex:1; min-width:0; }
 .ua-ev h4 { font-size:.88rem; }
 .ua-ev h4 a { color:var(--ink) !important; }
+/* the title's link covers the whole row; the row's own controls stay on top */
+.ua-ev { position:relative; }
+.ua-ev:hover { border-color:var(--brand); }
+.ua-ev-link::after { content:""; position:absolute; inset:0; border-radius:var(--r); }
+.ua-ev form, .ua-ev button, .ua-ev a:not(.ua-ev-link) { position:relative; z-index:1; }
 .ua-vis { display:inline-flex; border:1px solid var(--line); border-radius:7px; overflow:hidden; font-size:.7rem; font-weight:700; }
 .ua-vis span { padding:4px 9px; color:var(--muted); }
 .ua-vis span.on { background:var(--brand-fill); color:var(--on-brand); }
@@ -262,6 +269,7 @@ a { color:var(--brand); }
 .ua-chip { font-size:.68rem; font-weight:650; line-height:1.25; padding:3px 6px; border-radius:6px;
            background:var(--brand-50); color:var(--brand-700) !important; }
 .ua-chip--priv { background:transparent; border:1px dashed var(--co); color:var(--co-ink) !important; }
+.ua-chip:hover { box-shadow:inset 0 0 0 1px currentColor; }
 
 /* clubs and the map */
 .ua-clubs { display:grid; grid-template-columns:1.4fr 1fr; gap:22px; align-items:start; }
@@ -297,6 +305,9 @@ a { color:var(--brand); }
 .ua-dl > div { display:flex; gap:12px; padding:6px 0; font-size:.86rem; border-bottom:1px solid var(--line); }
 .ua-dl > div:last-child { border-bottom:none; }
 .ua-dl span { width:150px; flex:none; color:var(--muted); font-size:.78rem; font-weight:650; }
+/* an event's details: plain text, its line breaks kept */
+.ua-evtext p { white-space:pre-line; overflow-wrap:anywhere; }
+.ua-evtext p:last-child { margin-bottom:0; }
 .ua-docs a { display:block; padding:12px 16px; border-bottom:1px solid var(--line); }
 .ua-docs a:last-child { border-bottom:none; }
 .ua-docs a:hover { background:var(--brand-50); }
@@ -529,6 +540,7 @@ a { color:var(--brand); }
   .ua-cmbar a { min-height:40px; display:inline-flex; align-items:center; }
 
   .ua-calswitch { flex-wrap:wrap; }
+  .ua-cmd, .ua-cmd .seg { flex-wrap:wrap; }
   .ua-vis button { min-height:40px; padding:4px 14px; }
 
   .ua .form input[type=text], .ua .form input[type=date], .ua .form input[type=email],

@@ -96,6 +96,11 @@ msgstr ""
 msgid "Add the field"
 msgstr ""
 
+#: lib/uadebate_web/controllers/calendar_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "Add to my calendar"
+msgstr ""
+
 #: lib/uadebate_web/controllers/manage/html/news_form.html.heex
 #, elixir-autogen, elixir-format
 msgid "Address"
@@ -197,6 +202,7 @@ msgstr ""
 msgid "Back to draft: only content managers see it."
 msgstr ""
 
+#: lib/uadebate_web/controllers/calendar_html/show.html.heex
 #: lib/uadebate_web/controllers/event_request_html/sent.html.heex
 #, elixir-autogen, elixir-format
 msgid "Back to the calendar"
@@ -246,11 +252,13 @@ msgstr ""
 #: lib/uadebate_web/components/site.ex
 #: lib/uadebate_web/controllers/calendar_controller.ex
 #: lib/uadebate_web/controllers/calendar_html/index.html.heex
+#: lib/uadebate_web/controllers/calendar_html/show.html.heex
 #: lib/uadebate_web/controllers/event_request_html/new.html.heex
 #: lib/uadebate_web/controllers/event_request_html/sent.html.heex
 #: lib/uadebate_web/controllers/manage/calendar_controller.ex
 #: lib/uadebate_web/controllers/manage/html/calendar.html.heex
 #: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
@@ -283,6 +291,7 @@ msgid "Cities"
 msgstr ""
 
 #: lib/uadebate/event_requests.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #: lib/uadebate_web/controllers/club_html/index.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
@@ -387,6 +396,7 @@ msgid "DFU"
 msgstr ""
 
 #: lib/uadebate/event_requests.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #, elixir-autogen, elixir-format
 msgid "Dates"
 msgstr ""
@@ -441,6 +451,7 @@ msgstr ""
 msgid "Decline"
 msgstr ""
 
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #: lib/uadebate_web/controllers/manage/html/tags.html.heex
 #, elixir-autogen, elixir-format
@@ -448,6 +459,7 @@ msgid "Delete"
 msgstr ""
 
 #: lib/uadebate/event_requests.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
@@ -482,6 +494,7 @@ msgstr ""
 
 #: lib/uadebate_web/controllers/manage/html/calendar.html.heex
 #: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
 #: lib/uadebate_web/controllers/manage/html/news_form.html.heex
 #: lib/uadebate_web/controllers/manage/html/tags.html.heex
 #, elixir-autogen, elixir-format
@@ -536,6 +549,12 @@ msgstr ""
 #: lib/uadebate_web/controllers/manage/event_controller.ex
 #, elixir-autogen, elixir-format
 msgid "Event saved."
+msgstr ""
+
+#: lib/uadebate_web/controllers/calendar_html/show.html.heex
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
+#, elixir-autogen, elixir-format
+msgid "Event website"
 msgstr ""
 
 #: lib/uadebate_web/components/site.ex
@@ -621,6 +640,7 @@ msgid "For example BP, APF, WSDC"
 msgstr ""
 
 #: lib/uadebate/event_requests.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #: lib/uadebate_web/controllers/club_html/index.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
@@ -779,6 +799,7 @@ msgid "Kyiv"
 msgstr ""
 
 #: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #: lib/uadebate_web/controllers/club_html/index.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
@@ -1165,7 +1186,8 @@ msgid "Privacy policy"
 msgstr ""
 
 #: lib/uadebate_web/components/site.ex
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#: lib/uadebate_web/controllers/manage/html.ex
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
 #, elixir-autogen, elixir-format
 msgid "Private"
 msgstr ""
@@ -1180,7 +1202,7 @@ msgstr ""
 msgid "Private: only content managers see tags."
 msgstr ""
 
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#: lib/uadebate_web/controllers/manage/html.ex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
 msgid "Public"
@@ -1724,6 +1746,11 @@ msgstr ""
 #: lib/uadebate_web/controllers/page_html/about.html.heex
 #, elixir-autogen, elixir-format
 msgid "What we store and why"
+msgstr ""
+
+#: lib/uadebate_web/controllers/calendar_html.ex
+#, elixir-autogen, elixir-format
+msgid "When and where"
 msgstr ""
 
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex

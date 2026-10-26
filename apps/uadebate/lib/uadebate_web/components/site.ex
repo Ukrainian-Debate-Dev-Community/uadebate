@@ -256,8 +256,13 @@ defmodule UadebateWeb.Site do
   end
 
   attr :event, :map, required: true
+  attr :href, :string, required: true, doc: "the event's page"
   slot :inner_block
 
+  @doc """
+  An event in a list. The whole row opens the event's page: the title's
+  link stretches over it, and the row's own controls sit above that link.
+  """
   def event_row(assigns) do
     assigns = assign(assigns, phase: event_phase(assigns.event, Date.utc_today()))
 
@@ -270,10 +275,7 @@ defmodule UadebateWeb.Site do
     ]}>
       <.date_badge date={@event.starts_on} />
       <div class="ua-ev-body">
-        <h4>
-          <a :if={@event.link} href={@event.link}>{@event.title}</a>
-          <span :if={!@event.link}>{@event.title}</span>
-        </h4>
+        <h4><a class="ua-ev-link" href={@href}>{@event.title}</a></h4>
         <div class="ua-meta">{event_meta(@event)}</div>
       </div>
       <%= if @event.visibility == "private" do %>
@@ -298,6 +300,7 @@ defmodule UadebateWeb.Site do
 
   attr :first, Date, required: true
   attr :events, :list, required: true
+  attr :href, :any, required: true, doc: "a function from an event to its page"
 
   def month_grid(assigns) do
     first = assigns.first
@@ -329,16 +332,17 @@ defmodule UadebateWeb.Site do
           class={["ua-day", day.month != @first.month && "out", day == @today && "today"]}
         >
           <span class="n">{day.day}</span>
-          <span
+          <a
             :for={e <- Enum.filter(@events, &on_day?(&1, day))}
             class={[
               "ua-chip",
               e.visibility == "private" && "ua-chip--priv",
               event_phase(e, @today) == :past && "ua-chip--past"
             ]}
+            href={@href.(e)}
           >
             {e.title}
-          </span>
+          </a>
         </div>
       </div>
     </div>
@@ -530,6 +534,13 @@ defmodule UadebateWeb.Site do
       ],
       n - 1
     )
+  end
+
+  @doc "An event's day, or its first and last day when it runs longer."
+  def event_dates(%{starts_on: first, ends_on: last}) do
+    if last && Date.compare(last, first) == :gt,
+      do: "#{long_date(first)} - #{long_date(last)}",
+      else: long_date(first)
   end
 
   def long_date(nil), do: gettext("Draft")

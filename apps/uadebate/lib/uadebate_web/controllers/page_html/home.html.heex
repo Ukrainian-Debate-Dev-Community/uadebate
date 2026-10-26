@@ -68,7 +68,7 @@
     <div class="ua-sec">
       {gettext("Upcoming events")} <a href={~p"/calendar"}>{gettext("Calendar")}</a>
     </div>
-    <.event_row :for={event <- @upcoming} event={event} />
+    <.event_row :for={event <- @upcoming} event={event} href={~p"/calendar/#{event.id}"} />
     <div :if={@upcoming == []} class="ua-card ua-empty">{gettext("Nothing planned yet.")}</div>
 
     <div class="ua-sec">{gettext("Community")}</div>
