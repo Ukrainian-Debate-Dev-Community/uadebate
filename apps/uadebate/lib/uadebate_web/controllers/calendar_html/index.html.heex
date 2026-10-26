@@ -15,11 +15,20 @@
 
 <%= if @calendar_public do %>
   <.toolbar period={@period} kind={@kind} base={~p"/calendar"} />
-  <.month_grid :if={@period.view == :month} first={@period.first} events={@events} />
+  <.month_grid
+    :if={@period.view == :month}
+    first={@period.first}
+    events={@events}
+    href={&link(~p"/calendar/#{&1.id}", @period, @kind, nil)}
+  />
 
   <%= for {heading, events} <- groups(@period, @events) do %>
     <div class="ua-sec">{heading}</div>
-    <.event_row :for={event <- events} event={event} />
+    <.event_row
+      :for={event <- events}
+      event={event}
+      href={link(~p"/calendar/#{event.id}", @period, @kind, nil)}
+    />
   <% end %>
   <div :if={@events == []} class="ua-card ua-empty">{empty_text(@period)}</div>
 <% else %>

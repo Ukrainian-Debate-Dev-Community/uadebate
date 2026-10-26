@@ -38,6 +38,7 @@ defmodule UadebateWeb.Router do
     # the container health check
     get "/healthz", HealthController, :show
     get "/calendar.ics", CalendarController, :ics
+    get "/calendar/:id/ics", CalendarController, :event_ics
     # the language menu: sets its own cookie, never the session
     get "/locale/:locale", LocaleController, :set
   end
@@ -61,6 +62,13 @@ defmodule UadebateWeb.Router do
     post "/calendar/request", EventRequestController, :create
   end
 
+  # after /calendar/request, which it would otherwise take
+  scope "/", UadebateWeb do
+    pipe_through :public
+
+    get "/calendar/:id", CalendarController, :show
+  end
+
   scope "/manage", UadebateWeb.Manage do
     pipe_through :manage
 
@@ -78,6 +86,7 @@ defmodule UadebateWeb.Router do
     post "/calendar/public", CalendarController, :set_public
     get "/events/new", EventController, :new
     post "/events", EventController, :create
+    get "/events/:id", EventController, :show
     get "/events/:id/edit", EventController, :edit
     put "/events/:id", EventController, :update
     delete "/events/:id", EventController, :delete

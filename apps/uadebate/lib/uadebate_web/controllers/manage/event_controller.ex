@@ -3,7 +3,7 @@ defmodule UadebateWeb.Manage.EventController do
 
   alias Uadebate.{EventRequests, Events, Tags}
   alias Uadebate.Events.Event
-  alias UadebateWeb.Emails
+  alias UadebateWeb.{CalendarHTML, Emails, Period}
   alias UadebateWeb.Manage.HTML
 
   plug :put_view, UadebateWeb.Manage.HTML
@@ -46,6 +46,20 @@ defmodule UadebateWeb.Manage.EventController do
     end
   end
 
+  # any event, private ones too; the calendar's period, kind and tag ride
+  # along in the query, so the way back shows the same calendar
+  def show(conn, %{"id" => id} = params) do
+    event = Events.get!(id)
+
+    render(conn, :event,
+      manage_active: :calendar,
+      page_title: event.title,
+      event: event,
+      back: with_filters(~p"/manage/calendar", params),
+      visibility_action: with_filters(~p"/manage/events/#{event.id}/visibility", params)
+    )
+  end
+
   def edit(conn, %{"id" => id}) do
     event = Events.get!(id)
     render_form(conn, event, Events.change(event))
@@ -74,11 +88,19 @@ defmodule UadebateWeb.Manage.EventController do
     |> redirect(to: back_to(event))
   end
 
-  def visibility(conn, %{"id" => id, "visibility" => visibility})
+  # back=event: sent from the event's page, which it returns to
+  def visibility(conn, %{"id" => id, "visibility" => visibility} = params)
       when visibility in ~w(public private) do
     event = Events.get!(id)
     {:ok, event} = Events.set_visibility(event, visibility)
-    redirect(conn, to: back_to(event))
+
+    redirect(conn,
+      to:
+        if(params["back"] == "event",
+          do: with_filters(~p"/manage/events/#{event.id}", params),
+          else: back_to(event)
+        )
+    )
   end
 
   defp render_form(conn, event, changeset, attrs \\ %{}) do
@@ -91,6 +113,11 @@ defmodule UadebateWeb.Manage.EventController do
       tags: Tags.list(),
       selected_tags: HTML.selected_tag_ids(attrs, event)
     )
+  end
+
+  defp with_filters(base, params) do
+    kind = if params["kind"] in Event.kinds(), do: params["kind"]
+    CalendarHTML.link(base, Period.parse(params), kind, Tags.find(params["tag"]))
   end
 
   defp back_to(event),

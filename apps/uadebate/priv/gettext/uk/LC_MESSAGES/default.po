@@ -99,6 +99,11 @@ msgstr "Активні клуби"
 msgid "Add the field"
 msgstr "Додати поле"
 
+#: lib/uadebate_web/controllers/calendar_html/show.html.heex
+#, elixir-autogen, elixir-format
+msgid "Add to my calendar"
+msgstr "Додати до мого календаря"
+
 #: lib/uadebate_web/controllers/manage/html/news_form.html.heex
 #, elixir-autogen, elixir-format
 msgid "Address"
@@ -200,6 +205,7 @@ msgstr "БПФ"
 msgid "Back to draft: only content managers see it."
 msgstr "Знову чернетка: її бачать лише контент-менеджери."
 
+#: lib/uadebate_web/controllers/calendar_html/show.html.heex
 #: lib/uadebate_web/controllers/event_request_html/sent.html.heex
 #, elixir-autogen, elixir-format
 msgid "Back to the calendar"
@@ -249,11 +255,13 @@ msgstr "Підтримка кабінету"
 #: lib/uadebate_web/components/site.ex
 #: lib/uadebate_web/controllers/calendar_controller.ex
 #: lib/uadebate_web/controllers/calendar_html/index.html.heex
+#: lib/uadebate_web/controllers/calendar_html/show.html.heex
 #: lib/uadebate_web/controllers/event_request_html/new.html.heex
 #: lib/uadebate_web/controllers/event_request_html/sent.html.heex
 #: lib/uadebate_web/controllers/manage/calendar_controller.ex
 #: lib/uadebate_web/controllers/manage/html/calendar.html.heex
 #: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
@@ -286,6 +294,7 @@ msgid "Cities"
 msgstr "Міста"
 
 #: lib/uadebate/event_requests.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #: lib/uadebate_web/controllers/club_html/index.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
@@ -390,6 +399,7 @@ msgid "DFU"
 msgstr "ФДУ"
 
 #: lib/uadebate/event_requests.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #, elixir-autogen, elixir-format
 msgid "Dates"
 msgstr "Дати"
@@ -444,6 +454,7 @@ msgstr "Рішення"
 msgid "Decline"
 msgstr "Відхилити"
 
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #: lib/uadebate_web/controllers/manage/html/tags.html.heex
 #, elixir-autogen, elixir-format
@@ -451,6 +462,7 @@ msgid "Delete"
 msgstr "Видалити"
 
 #: lib/uadebate/event_requests.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #: lib/uadebate_web/controllers/page_html/home.html.heex
 #, elixir-autogen, elixir-format
@@ -485,6 +497,7 @@ msgstr "Чернетки"
 
 #: lib/uadebate_web/controllers/manage/html/calendar.html.heex
 #: lib/uadebate_web/controllers/manage/html/dash.html.heex
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
 #: lib/uadebate_web/controllers/manage/html/news_form.html.heex
 #: lib/uadebate_web/controllers/manage/html/tags.html.heex
 #, elixir-autogen, elixir-format
@@ -540,6 +553,12 @@ msgstr "Подію збережено, запит прийнято. Автор �
 #, elixir-autogen, elixir-format
 msgid "Event saved."
 msgstr "Подію збережено."
+
+#: lib/uadebate_web/controllers/calendar_html/show.html.heex
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
+#, elixir-autogen, elixir-format
+msgid "Event website"
+msgstr "Сайт події"
 
 #: lib/uadebate_web/components/site.ex
 #, elixir-autogen, elixir-format
@@ -624,6 +643,7 @@ msgid "For example BP, APF, WSDC"
 msgstr "Наприклад, BP, APF, WSDC"
 
 #: lib/uadebate/event_requests.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #: lib/uadebate_web/controllers/club_html/index.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
@@ -782,6 +802,7 @@ msgid "Kyiv"
 msgstr "Київ"
 
 #: lib/uadebate_web/components/site.ex
+#: lib/uadebate_web/controllers/calendar_html.ex
 #: lib/uadebate_web/controllers/club_html/index.html.heex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
@@ -1168,7 +1189,8 @@ msgid "Privacy policy"
 msgstr "Політика конфіденційності"
 
 #: lib/uadebate_web/components/site.ex
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#: lib/uadebate_web/controllers/manage/html.ex
+#: lib/uadebate_web/controllers/manage/html/event.html.heex
 #, elixir-autogen, elixir-format
 msgid "Private"
 msgstr "Приватна"
@@ -1183,7 +1205,7 @@ msgstr "Приватна: її бачать лише контент-менедж
 msgid "Private: only content managers see tags."
 msgstr "Приватно: мітки бачать лише контент-менеджери."
 
-#: lib/uadebate_web/controllers/manage/html/calendar.html.heex
+#: lib/uadebate_web/controllers/manage/html.ex
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format
 msgid "Public"
@@ -1728,6 +1750,11 @@ msgstr "Що питаємо у відвідувачів на сторінці з
 #, elixir-autogen, elixir-format
 msgid "What we store and why"
 msgstr "Що ми зберігаємо і навіщо"
+
+#: lib/uadebate_web/controllers/calendar_html.ex
+#, elixir-autogen, elixir-format
+msgid "When and where"
+msgstr "Коли і де"
 
 #: lib/uadebate_web/controllers/manage/html/event_form.html.heex
 #, elixir-autogen, elixir-format

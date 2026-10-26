@@ -37,6 +37,25 @@ defmodule UadebateWeb.Manage.HTML do
     """
   end
 
+  attr :event, :map, required: true
+  attr :action, :string, required: true
+  attr :back, :string, default: nil, doc: "\"event\": come back to the event's page"
+
+  @doc "An event's Public / Private switch: two one-button forms."
+  def visibility_switch(assigns) do
+    ~H"""
+    <span class="ua-vis">
+      <.form :for={value <- ~w(public private)} for={%{}} action={@action} method="post" class="ua-inline-form">
+        <input type="hidden" name="visibility" value={value} />
+        <input :if={@back} type="hidden" name="back" value={@back} />
+        <button type="submit" class={@event.visibility == value && "on"}>
+          {if value == "public", do: gettext("Public"), else: gettext("Private")}
+        </button>
+      </.form>
+    </span>
+    """
+  end
+
   attr :tags, :list, required: true
 
   @doc "A row's private tags, as coloured chips; only /manage shows them."

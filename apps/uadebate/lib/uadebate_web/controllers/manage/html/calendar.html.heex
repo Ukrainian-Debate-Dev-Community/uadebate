@@ -42,34 +42,22 @@
   selected={@tag}
   href={&UadebateWeb.CalendarHTML.link(~p"/manage/calendar", @period, @kind, &1)}
 />
-<.month_grid :if={@period.view == :month} first={@period.first} events={@events} />
+<.month_grid
+  :if={@period.view == :month}
+  first={@period.first}
+  events={@events}
+  href={&UadebateWeb.CalendarHTML.link(~p"/manage/events/#{&1.id}", @period, @kind, @tag)}
+/>
 
 <%= for {heading, events} <- UadebateWeb.CalendarHTML.groups(@period, @events) do %>
 <div class="ua-sec">{heading}</div>
-<.event_row :for={event <- events} event={event}>
+<.event_row
+  :for={event <- events}
+  event={event}
+  href={UadebateWeb.CalendarHTML.link(~p"/manage/events/#{event.id}", @period, @kind, @tag)}
+>
   <.tag_chips tags={event.tags} />
-  <span class="ua-vis">
-    <.form
-      for={%{}}
-      action={~p"/manage/events/#{event.id}/visibility"}
-      method="post"
-      class="ua-inline-form"
-    >
-      <input type="hidden" name="visibility" value="public" />
-      <button type="submit" class={event.visibility == "public" && "on"}>{gettext("Public")}</button>
-    </.form>
-    <.form
-      for={%{}}
-      action={~p"/manage/events/#{event.id}/visibility"}
-      method="post"
-      class="ua-inline-form"
-    >
-      <input type="hidden" name="visibility" value="private" />
-      <button type="submit" class={event.visibility == "private" && "on"}>
-        {gettext("Private")}
-      </button>
-    </.form>
-  </span>
+  <.visibility_switch event={event} action={~p"/manage/events/#{event.id}/visibility"} />
   <a class="ua-btn ua-btn--line ua-btn--sm" href={~p"/manage/events/#{event.id}/edit"}>
     {gettext("Edit")}
   </a>
