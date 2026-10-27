@@ -119,6 +119,12 @@ if config_env() == :prod do
     config :cab, :default_phone_country, String.upcase(country)
   end
 
+  # form times typed without JavaScript, for accounts without a zone of
+  # their own, are read in this zone (IANA, e.g. Europe/Kyiv)
+  if zone = System.get_env("DEFAULT_TIME_ZONE") do
+    config :cab, :default_time_zone, zone
+  end
+
   # cab's public forms (guest registration, join requests): the form rate
   # limit is on unless FORM_RATE_LIMIT=false
   config :cab, CabWeb.BotGuard, rate_limit: System.get_env("FORM_RATE_LIMIT", "true") == "true"
