@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.6.0 - 2026-10-27
+
+1 feature, 3 chore; breaking: 0
+
+### Features
+
+- uadebate: a page for every calendar event (#35) by @merv1n34k
+
+### Other
+
+- chore(deps): pin cab v0.3.0, participant limit and date pickers (#38) by @merv1n34k
+- chore(deps): bump jose to 1.11.13 for new advisories (#37) by @merv1n34k
+- chore(deps): bump bandit to 1.14.0 for CVE-2026-115269 (#36) by @merv1n34k
+
+### Contributors
+
+- @merv1n34k: 4 commits
+
 ## v0.5.1 - 2026-10-26
 
 2 chore; breaking: 0
