@@ -36,6 +36,11 @@ defmodule UadebateWeb.Manage.RequestController do
         conn
         |> put_flash(:error, gettext("This request was already decided."))
         |> redirect(to: ~p"/manage/requests")
+
+      {:error, message} ->
+        conn
+        |> put_flash(:error, message)
+        |> redirect(to: ~p"/manage/requests")
     end
   end
 
