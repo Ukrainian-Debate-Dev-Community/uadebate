@@ -1,5 +1,16 @@
 # uadebate
 
+> **Archived (2026-10-31).** uadebate.com no longer runs from this repo.
+> Its code moved to
+> [opendebate-cab](https://github.com/Ukrainian-Debate-Dev-Community/opendebate-cab)
+> as the generic public site `apps/public` (opendebate-cab v0.4.0 on;
+> one image runs cab and the public site), and uadebate.com's own part -
+> its texts, contacts, club map and pages such as /about - is the tenant
+> folder in
+> [uadebate-server](https://github.com/Ukrainian-Debate-Dev-Community/uadebate-server)
+> (`tenant/`), which also deploys it. The last release from here is
+> v0.6.0. Below is the repo as it was.
+
 uadebate.com and the cab it runs at cab.uadebate.com, as one Elixir
 umbrella:
 
